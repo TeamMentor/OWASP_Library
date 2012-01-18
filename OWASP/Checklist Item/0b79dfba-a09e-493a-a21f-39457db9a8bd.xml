@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<guidanceItem id="0b79dfba-a09e-493a-a21f-39457db9a8bd" Author="" Category="Authentication" Priority="2" Rule_Type="Checklist Item" Status="" Technology="ASP.NET 3.5" title="Absolute URLs are used for Navigation where the Site is Partitioned with Secure and non-Secure Folders" Topic="Security" phase="Implementation" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Ensure that absolute URLs are used for navigation where the site is partitioned with secure and non-secure folders.&lt;/p&gt;&lt;h1&gt;Related Items&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="ruledisplay:ddb23ab5-617f-46ec-adee-7c34e4bebf79"&gt;Use Absolute URLs for Navigation Where a Site is Partitioned into Secure and Insecure Folders&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance. &lt;/p&gt;</content>
+</guidanceItem>

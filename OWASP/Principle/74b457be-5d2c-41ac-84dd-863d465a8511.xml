@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<guidanceItem id="74b457be-5d2c-41ac-84dd-863d465a8511" Author="" Category="Input and Data Validation" Priority="" Rule_Type="Principle" Status="" Technology=" Any" title="Don't Trust User Input" Topic="Security" phase="Design" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>&lt;br&gt;&lt;h1&gt;Description&lt;/h1&gt;&lt;p&gt;Applications should thoroughly validate all user input before performing operations with that input. The validation may include filtering out special characters. This preventive measure protects the application against accidental misuse or deliberate attacks by people who are attempting to inject malicious commands into the system. Common examples include SQL injection attacks, cross-site scripting attacks, and buffer overflow. &lt;/p&gt;</content>
+</guidanceItem>
