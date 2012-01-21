@@ -1,4 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="09d999d8-a21a-4f05-b66d-fa0b658e7ac6" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="FrontPage Server Extensions (FPSE) are removed if not used. If they are used, they are updated and access to FPSE is restricted." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that FrontPage Server Extensions (FPSE) are removed if not used. If they are used, they are updated and access to FPSE is restricted.&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;If you do not use FrontPage Server&amp;nbsp;Extensions (FPSE), disable it. If you use FPSE, take&amp;nbsp;the following steps to improve security: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Upgrade server extensions&lt;/strong&gt;. See to the security issues covered in MSDN article,&amp;nbsp;"Microsoft FrontPage Server Extensions 2002 for Windows" at &lt;a href="http://msdn.microsoft.com/library/en-us/dnservext/html/fpse02win.asp"&gt;http://msdn.microsoft.com/library/en-us/dnservext/html/fpse02win.asp&lt;/a&gt;. &lt;/li&gt;&lt;li&gt;&lt;strong&gt;Restrict access using FrontPage security&lt;/strong&gt;. FPSE installs groups that are granted permissions to those Web sites for which the server extensions are configured. These groups are used to restrict the access available based on the role of the user. For more information, see the Assistance Center at &lt;a href="http://office.microsoft.com/assistance/2002/articles/fp_colmanagesecurity.aspx"&gt;http://office.microsoft.com/assistance/2002/articles/fp_colmanagesecurity.aspx&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="09d999d8-a21a-4f05-b66d-fa0b658e7ac6" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="FrontPage Server Extensions (FPSE) Are Removed If Not Used" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that FrontPage Server Extensions (FPSE) are removed if not used. If they are used, they are updated and access to FPSE is restricted.&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;If you do not use FrontPage Server&amp;nbsp;Extensions (FPSE), disable it. If you use FPSE, take&amp;nbsp;the following steps to improve security:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Upgrade server extensions&lt;/strong&gt;. See to the security issues covered in MSDN article,&amp;nbsp;&amp;quot;Microsoft FrontPage Server Extensions 2002 for Windows&amp;quot; at
+&lt;a href="http://msdn.microsoft.com/library/en-us/dnservext/html/fpse02win.asp"&gt;http://msdn.microsoft.com/library/en-us/dnservext/html/fpse02win.asp&lt;/a&gt;.
+&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Restrict access using FrontPage security&lt;/strong&gt;. FPSE installs groups that are granted permissions to those Web sites for which the server extensions are configured. These groups are used to restrict the access available based on the role of the
+ user. For more information, see the Assistance Center at &lt;a href="http://office.microsoft.com/assistance/2002/articles/fp_colmanagesecurity.aspx"&gt;
+http://office.microsoft.com/assistance/2002/articles/fp_colmanagesecurity.aspx&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

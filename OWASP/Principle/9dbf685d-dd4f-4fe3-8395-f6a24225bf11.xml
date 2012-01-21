@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <guidanceItem id="9dbf685d-dd4f-4fe3-8395-f6a24225bf11" Author="" Category="Session Management" Priority="" Rule_Type="Principle" Status="" Technology=" Any" title="Limit Session Lifetime" Topic="Security" phase="Design" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
   <content>&lt;h1&gt;Description&lt;br&gt;&lt;/h1&gt;&lt;p&gt;Reduce the lifetime of sessions to mitigate the risk of session hijacking and replay attacks. The shorter the session, the less time an attacker has to capture a session cookie and use it to access your application.&lt;/p&gt;</content>
 </guidanceItem>

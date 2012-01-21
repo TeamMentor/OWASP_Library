@@ -1,4 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="9ced6a73-1c18-4f7b-83a0-7094731042f5" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="MSADC virtual directory (RDS) is removed or secured." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that the MSADC virtual directory (RDS) is removed or secured.&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;Remote Data Services (RDS) is a component that enables controlled Internet access to&amp;nbsp;remote data resources through IIS. The RDS interface is provided by Msadcs.dll, which is located in the following directory: program files\common files\system\Msadc.&lt;/p&gt;&lt;h3&gt;Removing RDS&lt;/h3&gt;&lt;p&gt;If your applications do not use RDS, remove it.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;To remove RDS support&lt;/strong&gt; &lt;/p&gt;&lt;ol&gt;&lt;li&gt;Remove the /MSADC virtual directory mapping from IIS. &lt;/li&gt;&lt;li&gt;Remove the RDS files and subdirectories at the following location: &lt;p&gt;\Program Files\Common Files\System\Msadc &lt;/p&gt;&lt;/li&gt;&lt;li&gt;Remove the following registry key: &lt;p&gt;HKLM\System\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch &lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;IISLockdown provides an option to remove the MSADC virtual directory. Note that IISLockdown only removes the virtual directory, not the files or registry key.&lt;/blockquote&gt;&lt;h3&gt;Securing RDS&lt;/h3&gt;&lt;p&gt;If your applications require RDS, secure it.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;To secure RDS&lt;/strong&gt; &lt;/p&gt;&lt;ol&gt;&lt;li&gt;Delete the samples at the following location: &lt;p&gt;\Progam Files\Common Files\System\Msadc\Samples &lt;/p&gt;&lt;/li&gt;&lt;li&gt;Remove the following registry key: &lt;p&gt;&lt;strong&gt;HKLM\System\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch\VbBusObj.VbBusObjCls&lt;/strong&gt; &lt;/p&gt;&lt;/li&gt;&lt;li&gt;Disable Anonymous access for the MSADC virtual directory in IIS. &lt;/li&gt;&lt;li&gt;Create a &lt;strong&gt;HandlerRequired&lt;/strong&gt; registry key in the following location: &lt;p&gt;&lt;strong&gt;HKLM\Software\Microsoft\DataFactory\HandlerInfo\&lt;/strong&gt; &lt;/p&gt;&lt;/li&gt;&lt;li&gt;Create a new DWORD value, and set it to &lt;strong&gt;1&lt;/strong&gt; (1 indicates safe mode, while 0 indicates unsafe mode. &lt;/li&gt;&lt;/ol&gt;&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;You can use the registry script file Handsafe.reg to change the registry key. The script file is located in the msadc directory: \Program Files\Common Files\System\msadc&lt;/blockquote&gt;&lt;h1&gt;Additional Resources&lt;/h1&gt;&lt;p&gt;For more information about securing RDS, see the following: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;MS99-025 Microsoft Security Program: Unauthorized Access to IIS Servers through ODBC Data Access with RDS at &lt;a href="http://www.microsoft.com/technet/security/bulletin/ms99-025.mspx"&gt;http://www.microsoft.com/technet/security/bulletin/ms99-025.mspx&lt;/a&gt;. &lt;/li&gt;&lt;li&gt;MS98-004 Microsoft Security Program: Microsoft Security Bulletin: Unauthorized ODBC Data Access with RDS and IIS at &lt;a href="http://www.microsoft.com/technet/security/bulletin/ms98-004.mspx"&gt;http://www.microsoft.com/technet/security/bulletin/ms98-004.mspx&lt;/a&gt;. &lt;/li&gt;&lt;li&gt;Microsoft Knowledge Base article 184375, "PRB: Security Implications of RDS 1.5, IIS 3.0 or 4.0, and ODBC." &lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="9ced6a73-1c18-4f7b-83a0-7094731042f5" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="MSADC Virtual Directory (RDS) Is Removed Or Secured" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that the MSADC virtual directory (RDS) is removed or secured.&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;Remote Data Services (RDS) is a component that enables controlled Internet access to&amp;nbsp;remote data resources through IIS. The RDS interface is provided by Msadcs.dll, which is located in the following directory: program files\common files\system\Msadc.&lt;/p&gt;
+&lt;h3&gt;Removing RDS&lt;/h3&gt;
+&lt;p&gt;If your applications do not use RDS, remove it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To remove RDS support&lt;/strong&gt; &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove the /MSADC virtual directory mapping from IIS. &lt;/li&gt;&lt;li&gt;Remove the RDS files and subdirectories at the following location:
+&lt;p&gt;\Program Files\Common Files\System\Msadc &lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;Remove the following registry key:
+&lt;p&gt;HKLM\System\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch &lt;/p&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;IISLockdown provides an option to remove the MSADC virtual directory. Note that IISLockdown only removes the virtual directory, not the files or registry key.&lt;/blockquote&gt;
+&lt;h3&gt;Securing RDS&lt;/h3&gt;
+&lt;p&gt;If your applications require RDS, secure it.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;To secure RDS&lt;/strong&gt; &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Delete the samples at the following location:
+&lt;p&gt;\Progam Files\Common Files\System\Msadc\Samples &lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;Remove the following registry key:
+&lt;p&gt;&lt;strong&gt;HKLM\System\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch\VbBusObj.VbBusObjCls&lt;/strong&gt;
+&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;Disable Anonymous access for the MSADC virtual directory in IIS. &lt;/li&gt;&lt;li&gt;Create a &lt;strong&gt;HandlerRequired&lt;/strong&gt; registry key in the following location:
+&lt;p&gt;&lt;strong&gt;HKLM\Software\Microsoft\DataFactory\HandlerInfo\&lt;/strong&gt; &lt;/p&gt;
+&lt;/li&gt;&lt;li&gt;Create a new DWORD value, and set it to &lt;strong&gt;1&lt;/strong&gt; (1 indicates safe mode, while 0 indicates unsafe mode.
+&lt;/li&gt;&lt;/ol&gt;
+&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;You can use the registry script file Handsafe.reg to change the registry key. The script file is located in the msadc directory: \Program Files\Common Files\System\msadc&lt;/blockquote&gt;
+&lt;h1&gt;Additional Resources&lt;/h1&gt;
+&lt;p&gt;For more information about securing RDS, see the following: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MS99-025 Microsoft Security Program: Unauthorized Access to IIS Servers through ODBC Data Access with RDS at
+&lt;a href="http://www.microsoft.com/technet/security/bulletin/ms99-025.mspx"&gt;http://www.microsoft.com/technet/security/bulletin/ms99-025.mspx&lt;/a&gt;.
+&lt;/li&gt;&lt;li&gt;MS98-004 Microsoft Security Program: Microsoft Security Bulletin: Unauthorized ODBC Data Access with RDS and IIS at
+&lt;a href="http://www.microsoft.com/technet/security/bulletin/ms98-004.mspx"&gt;http://www.microsoft.com/technet/security/bulletin/ms98-004.mspx&lt;/a&gt;.
+&lt;/li&gt;&lt;li&gt;Microsoft Knowledge Base article 184375, &amp;quot;PRB: Security Implications of RDS 1.5, IIS 3.0 or 4.0, and ODBC.&amp;quot;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

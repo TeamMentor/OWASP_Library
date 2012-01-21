@@ -1,4 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="ce32cef6-e386-4348-b294-a562f7cd995b" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Latest patches and updates are installed." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that the latest patches and updates are installed for your network firewall.&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;Subscribe to alert services provided by the manufacturer of your firewall and operating system to stay current with both security issues and service patches.&lt;/p&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="ce32cef6-e386-4348-b294-a562f7cd995b" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Latest Patches And Updates Are Installed" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that the latest patches and updates are installed for your network firewall.&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;Subscribe to alert services provided by the manufacturer of your firewall and operating system to stay current with both security issues and service patches.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

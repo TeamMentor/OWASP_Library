@@ -1,4 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="d022ebb5-71d5-49f6-b7e8-93606bee7a42" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Sample applications are removed (\WINNT\Help\IISHelp, \Inetpub\IISSamples)." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that sample applications are removed&amp;nbsp;to reduce the areas where your web server can be attacked.&lt;/p&gt;&lt;h1&gt;Why&lt;/h1&gt;&lt;p&gt;Sample applications are typically not configured with high degrees of security. It is possible that an attacker could exploit an inherent weakness in a sample application or in its configuration to attack your Web site. &lt;/p&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="d022ebb5-71d5-49f6-b7e8-93606bee7a42" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Sample Applications Are Removed" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that sample applications are removed&amp;nbsp;to reduce the areas where your web server can be attacked.&lt;/p&gt;
+&lt;h1&gt;Why&lt;/h1&gt;
+&lt;p&gt;Sample applications are typically not configured with high degrees of security. It is possible that an attacker could exploit an inherent weakness in a sample application or in its configuration to attack your Web site.
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

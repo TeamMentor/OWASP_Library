@@ -1,4 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="5251a1f6-3b58-4a6c-a4e4-e9e6f8dc3e29" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Internet-facing interfaces are restricted to port 80 (and 443 if SSL is used)." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that access to Internet-facing interfaces are restricted to port 80 for HTTP and port 443 for HTTPS (SSL).&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL).&lt;/p&gt;&lt;h1&gt;Additional Resources&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;For outbound (Internet-facing) NICs, use IPSec or TCP filtering. For more information, see "&lt;a href="http://msdn2.microsoft.com/en-us/library/aa302366.aspx"&gt;How To: Use&amp;nbsp;IPSec&amp;nbsp;for&amp;nbsp;Filtering&amp;nbsp;Ports and&amp;nbsp;Authentication&lt;/a&gt;".&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="5251a1f6-3b58-4a6c-a4e4-e9e6f8dc3e29" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Internet-facing Interfaces Are Restricted" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that access to Internet-facing interfaces are restricted to port 80 for HTTP and port 443 for HTTPS (SSL).&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL).&lt;/p&gt;
+&lt;h1&gt;Additional Resources&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;For outbound (Internet-facing) NICs, use IPSec or TCP filtering. For more information, see &amp;quot;&lt;a href="http://msdn2.microsoft.com/en-us/library/aa302366.aspx"&gt;How To: Use&amp;nbsp;IPSec&amp;nbsp;for&amp;nbsp;Filtering&amp;nbsp;Ports and&amp;nbsp;Authentication&lt;/a&gt;&amp;quot;.&lt;/li&gt;&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

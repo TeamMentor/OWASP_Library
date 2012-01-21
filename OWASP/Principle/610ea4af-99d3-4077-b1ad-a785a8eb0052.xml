@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <guidanceItem id="610ea4af-99d3-4077-b1ad-a785a8eb0052" Author="" Category="Session Management" Priority="" Rule_Type="Principle" Status="" Technology=" Any" title="Use SSL to Protect Session Authentication Cookies" Topic="Security" phase="Design" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
   <content>&lt;br&gt;&lt;h1&gt;Description&lt;/h1&gt;&lt;p&gt;Do not pass authentication cookies over HTTP connections. Set the secure cookie property within authentication cookies, which instructs browsers to send cookies back to the server only over HTTPS connections. &lt;/p&gt;</content>
 </guidanceItem>

@@ -1,4 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="4dbe7d26-8dde-429c-b20d-4d0aac42abd9" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Remote registry access is restricted." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that remote registry access is restricted.&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;The Winreg key determines whether registry keys are available for remote access. By default, this key is configured to prevent users from remotely viewing most keys in the registry, and only highly privileged users can modify it. On Windows&amp;nbsp;2000 and Windows Server 2003, remote registry access is restricted by default to members of the &lt;strong&gt;Administrators&lt;/strong&gt; and &lt;strong&gt;Backup operators&lt;/strong&gt; group. Administrators have full control and backup operators have read-only access.&lt;/p&gt;&lt;p&gt;The associated permissions at the following registry location determine who can remotely access the registry.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;To view the permissions for this registry key, run Regedt32.exe, navigate to the key, and choose &lt;strong&gt;Permissions&lt;/strong&gt; from the &lt;strong&gt;Security&lt;/strong&gt; menu.&lt;/p&gt;&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Some services require remote access to the registry. Refer to Microsoft Knowledge Base article 153183, "How to Restrict Access to the Registry from a Remote Computer," to see if your situation demands limited remote registry access.&lt;/blockquote&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="4dbe7d26-8dde-429c-b20d-4d0aac42abd9" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Remote Registry Access Is Restricted" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that remote registry access is restricted.&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;The Winreg key determines whether registry keys are available for remote access. By default, this key is configured to prevent users from remotely viewing most keys in the registry, and only highly privileged users can modify it. On Windows&amp;nbsp;2000 and Windows
+ Server 2003, remote registry access is restricted by default to members of the &lt;strong&gt;
+Administrators&lt;/strong&gt; and &lt;strong&gt;Backup operators&lt;/strong&gt; group. Administrators have full control and backup operators have read-only access.&lt;/p&gt;
+&lt;p&gt;The associated permissions at the following registry location determine who can remotely access the registry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HKLM\SYSTEM\CurrentControlSet\Control\SecurePipeServers\winreg&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To view the permissions for this registry key, run Regedt32.exe, navigate to the key, and choose
+&lt;strong&gt;Permissions&lt;/strong&gt; from the &lt;strong&gt;Security&lt;/strong&gt; menu.&lt;/p&gt;
+&lt;blockquote&gt;&lt;strong&gt;Note&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Some services require remote access to the registry. Refer to Microsoft Knowledge Base article 153183, &amp;quot;How to Restrict Access to the Registry from a Remote Computer,&amp;quot; to see if your situation demands limited remote registry
+ access.&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

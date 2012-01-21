@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <guidanceExplorer xmlns="urn:microsoft:guidanceexplorer">
   <library name="4738d445-bc9b-456c-8b35-a35057596c16" caption="OWASP" readProtection="ReadWrite" suscribed="false" webSuscribed="true" url="http://localhost:10001/OnlineStorage.asmx">
     <libraryStructure>

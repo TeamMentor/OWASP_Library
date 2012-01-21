@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="dc099847-55d7-46b5-b316-e88f4b78aafe" 
-              Author="" 
-              Category="Server Hardening" 
-              Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" 
-              Rule_Type="Checklist Item" Status="" 
-              Technology="Any" 
-              title="A Custom Least-Privileged Anonymous Account is Created for Anonymous Access" 
-              Topic="Security" 
-              phase="Deployment" 
-              xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that a custom least-privileged anonymous account is created if your applications require anonymous access.&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;If your applications support anonymous access (for example, because they use a custom authentication mechanism such as Forms authentication), create a custom least privileged anonymous account. If you run IISLockdown, add your custom user to the Web Anonymous Users group that is created. IISLockdown denies access to system utilities and the ability to write to Web content directories for the Web Anonymous Users group.&lt;/p&gt;&lt;p&gt;If your Web server hosts multiple Web applications, you may want to use multiple anonymous accounts, one per application, so that you can secure and audit the operations of each application independently.&lt;/p&gt;&lt;h1&gt;Additional Reosurces&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;For more information about hosting multiple Web applications see Chapter 20, "&lt;a href="http://msdn.microsoft.com/en-us/library/aa302436.aspx"&gt;Hosting Multiple Web Applications&lt;/a&gt;."&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="dc099847-55d7-46b5-b316-e88f4b78aafe" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="A Custom Least-Privileged Anonymous Account Is Created for Anonymous Access" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that a custom least-privileged anonymous account is created if your applications require anonymous access.&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;If your applications support anonymous access (for example, because they use a custom authentication mechanism such as Forms authentication), create a custom least privileged anonymous account. If you run IISLockdown, add your custom user to the Web Anonymous
+ Users group that is created. IISLockdown denies access to system utilities and the ability to write to Web content directories for the Web Anonymous Users group.&lt;/p&gt;
+&lt;p&gt;If your Web server hosts multiple Web applications, you may want to use multiple anonymous accounts, one per application, so that you can secure and audit the operations of each application independently.&lt;/p&gt;
+&lt;h1&gt;Additional Reosurces&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;For more information about hosting multiple Web applications see Chapter 20, &amp;quot;&lt;a href="http://msdn.microsoft.com/en-us/library/aa302436.aspx"&gt;Hosting Multiple Web Applications&lt;/a&gt;.&amp;quot;&lt;/li&gt;&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

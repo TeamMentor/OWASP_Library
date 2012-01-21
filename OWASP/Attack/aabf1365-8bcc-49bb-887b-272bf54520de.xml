@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <guidanceItem id="aabf1365-8bcc-49bb-887b-272bf54520de" Author="" Category="Sensitive Data" Priority="2" Rule_Type="Attack" Status="" Technology=" Any" title="Statistical Analysis Attack" Topic="Security" phase="Any" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
   <content>&lt;br&gt;&lt;br&gt;&lt;h1 class="section"&gt;Applies To&lt;/h1&gt;
 &lt;p&gt;Applications encrypting sensitive data.&lt;/p&gt;

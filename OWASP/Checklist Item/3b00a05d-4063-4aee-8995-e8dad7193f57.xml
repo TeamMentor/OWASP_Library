@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="3b00a05d-4063-4aee-8995-e8dad7193f57" Author="" Category="Authentication" Priority="2" Rule_Type="Checklist Item" Status="" Technology="ASP.NET 3.5" title="Hashed Password Format is Specified in Membership Provider Configuration" Topic="Security" phase="Implementation" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+<?xml version="1.0" encoding="utf-8"?>
+<guidanceItem id="3b00a05d-4063-4aee-8995-e8dad7193f57" Author="" Category="Authentication" Priority="2" Rule_Type="Checklist Item" Status="" Technology="ASP.NET 3.5" title="Hashed Password Format Is Specified in Membership Provider Configuration" Topic="Security" phase="Implementation" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
   <content>&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Ensure that hashed password format is specified in provider configuration.&lt;/p&gt;&lt;h1&gt;Related Items&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="ruledisplay:385e4669-6c74-4cfa-b94f-5fcc754a263f"&gt;Specify Hashed Password Format in Provider Configuration&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance. &lt;/p&gt;</content>
 </guidanceItem>

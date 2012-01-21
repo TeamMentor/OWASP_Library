@@ -1,4 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="d8a09762-4ca7-4cdb-ba5f-5e60708ba73e" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Administrator account is renamed and has a strong password." Topic="Security" phase="Deployment" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;Web Application&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Check to ensure that administrator account is renamed and has a strong password to improve security.&lt;/p&gt;&lt;br&gt;&lt;h1&gt;How to Fix&lt;/h1&gt;&lt;p&gt;The default local Administrator account is a target for malicious use because of its elevated privileges on the computer. To improve security, rename the default Administrator account and assign it a strong password.&lt;/p&gt;&lt;p&gt;If you intend to perform local administration, configure the account to deny network logon rights and require the administrator to log on interactively. By doing so, you prevent users (well intentioned or otherwise) from using the Administrator account to log on to the server from a remote location. If a policy of local administration is too inflexible, implement a secure remote administration solution. &lt;/p&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;</content>
+<guidanceItem id="d8a09762-4ca7-4cdb-ba5f-5e60708ba73e" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Administrator Account Is Renamed And Has a Strong Password" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
+  <content>
+&lt;h1&gt;Applies to&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Web Application&lt;/div&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;h1&gt;What to Check For&lt;/h1&gt;
+&lt;p&gt;Check to ensure that administrator account is renamed and has a strong password to improve security.&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;How to Fix&lt;/h1&gt;
+&lt;p&gt;The default local Administrator account is a target for malicious use because of its elevated privileges on the computer. To improve security, rename the default Administrator account and assign it a strong password.&lt;/p&gt;
+&lt;p&gt;If you intend to perform local administration, configure the account to deny network logon rights and require the administrator to log on interactively. By doing so, you prevent users (well intentioned or otherwise) from using the Administrator account to
+ log on to the server from a remote location. If a policy of local administration is too inflexible, implement a secure remote administration solution.
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
+</content>
 </guidanceItem>

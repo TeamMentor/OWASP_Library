@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <guidanceItem id="f55158b5-1629-45a3-aa15-f7ed73c2449c" Author="" Category="Session Management" Priority="" Rule_Type="Principle" Status="" Technology=" Any" title="Encrypt the Contents of Authentication Cookies" Topic="Security" phase="Design" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
   <content>&lt;br&gt;&lt;h1&gt;Description&lt;/h1&gt;&lt;p&gt;Encrypt the cookie contents even if you are using SSL. This prevents an attacker viewing or modifying the cookie if he manages to steal it through an XSS attack. In this event, the attacker could still use the cookie to access your application, but only while the cookie remains valid.&lt;/p&gt;</content>
 </guidanceItem>
