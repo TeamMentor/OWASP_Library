@@ -43,8 +43,7 @@ Cross Site Scripting Attack&lt;/a&gt; (XSS) that leverages the XML or JSON forma
 &lt;li&gt;For more information on AJAX including common vulnerabilities that are associated with the technology, see &amp;quot;Ajax Security Basics&amp;quot;:
 &lt;a href="http://www.securityfocus.com/infocus/1868"&gt;http://www.securityfocus.com/infocus/1868&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;For information on AJAX attacks and JavaScript Hijacking, see &amp;quot;JavaScript Hijacking&amp;quot;:
-&lt;a href="www.net-security.org/dl/articles/JavaScript_Hijacking.pdf"&gt;http://www.fortifysoftware.com/servlet/downloads/public/JavaScript_Hijacking.pdf&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;For information on AJAX attacks and JavaScript Hijacking, see &amp;quot;JavaScript Hijacking&amp;quot;:&lt;span style="color:rgb(17,17,17); font-family:Calibri,Arial,Helvetica,sans-serif; font-size:small"&gt;&amp;nbsp;&lt;/span&gt;&lt;a href="http://www.net-security.org/dl/articles/JavaScript_Hijacking.pdf" style="margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; padding-left:0px; color:rgb(51,51,153); font-weight:bold; font-family:Calibri,Arial,Helvetica,sans-serif; font-size:small"&gt;http://www.net-security.org/dl/articles/JavaScript_Hijacking.pdf&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;h1&gt;Related Items&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="?#ruledisplay:BC10DCE2-CA48-44BF-8BF6-FEFBE8DCCB7E"&gt;Attack: Cross Site Scripting Attack&lt;/a&gt;
