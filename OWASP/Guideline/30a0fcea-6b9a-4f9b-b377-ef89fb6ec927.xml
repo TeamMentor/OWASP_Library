@@ -1,5 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="30a0fcea-6b9a-4f9b-b377-ef89fb6ec927" Author="" Category="Session Management" Priority="2" Rule_Type="Guideline" Status="" Technology="ASP.NET 3.5" title="Use SSL to Protect Session Cookies on Authenticated Pages" Topic="Security" phase="Implementation" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;What to Do&lt;/h1&gt;&lt;p&gt;Use SSL to protect session cookies on authenticated pages. &lt;/p&gt;&lt;h1&gt;Why&lt;/h1&gt;&lt;p&gt;Failing to protect authentication tickets is a common vulnerability that can lead to unauthorized spoofing and impersonation, session hijacking, and elevation of privilege.&lt;/p&gt;&lt;h1&gt;When&lt;/h1&gt;&lt;p&gt;All systems which use cookies for authentication should protect those cookies via SSL on all pages which require authentication, and ensure that the cookies are not used/sent for pages which do not require authentication and do not use SSL. &lt;/p&gt;&lt;h1&gt;How&lt;/h1&gt;&lt;p&gt;Set &lt;strong&gt;requireSSL="true"&lt;/strong&gt; on the &amp;lt;&lt;strong&gt;forms&lt;/strong&gt;&amp;gt; element, as shown in the following code.&lt;/p&gt;
-&lt;pre&gt;&amp;lt;forms loginUrl="Secure\Login.aspx"&lt;br&gt;       requireSSL="true" ... /&amp;gt;  &lt;/pre&gt;&lt;br&gt;&lt;p&gt;By setting &lt;strong&gt;requireSSL="true"&lt;/strong&gt;, you set the &lt;strong&gt;secure&lt;/strong&gt; cookie property that determines whether browsers should send the cookie back to the server. With the &lt;strong&gt;secure&lt;/strong&gt; property set, the cookie is sent by the browser only to a secure page that is requested using an HTTPS URL. &lt;/p&gt;&lt;h1&gt;Additional resources&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;div&gt;&lt;a href="http://msdn2.microsoft.com/en-us/library/ms998317.aspx"&gt;How To: Use Forms Authentication with SQL Server in ASP.NET&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;a href="http://msdn2.microsoft.com/en-us/library/ms998288.aspx"&gt;How To: Configure the Machine Key in ASP.NET&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;813829"&gt;Info: Help Secure Forms Authentication by Using Secure Sockets Layer (SSL)&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;hr&gt;&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance. &lt;/p&gt;</content>
-</guidanceItem>
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="1665382395" Content_Hash="-1083124832">
+  <Metadata>
+    <Id>30a0fcea-6b9a-4f9b-b377-ef89fb6ec927</Id>
+    <Library_Id>4738d445-bc9b-456c-8b35-a35057596c16</Library_Id>
+    <Title>Use SSL to Protect Session Cookies on Authenticated Pages</Title>
+    <Category>Session Management</Category>
+    <Phase>Implementation</Phase>
+    <Technology>ASP.NET 3.5</Technology>
+    <Type>Guideline</Type>
+    <DirectLink>Use SSL to Protect Session Cookies on Authenticated Pages</DirectLink>
+    <Tag />
+    <Security_Demand />
+    <Author />
+    <Priority>2</Priority>
+    <Status />
+  </Metadata>
+  <Content Sanitized="true" DataType="Html">
+    <Data><![CDATA[<h1>What to Do</h1>
+  <p>Use SSL to protect session cookies on authenticated pages. </p>
+  <h1>Why</h1>
+  <p>Failing to protect authentication tickets is a common vulnerability that can lead to unauthorized spoofing and impersonation, session hijacking, and elevation of privilege.</p>
+  <h1>When</h1>
+  <p>All systems which use cookies for authentication should protect those cookies via SSL on all pages which require authentication, and ensure that the cookies are not used/sent for pages which do not require authentication and do not use SSL. </p>
+  <h1>How</h1>
+  <p>Set <strong>requireSSL="true"</strong> on the &lt;<strong>forms</strong>&gt; element, as shown in the following code.</p>
+  <pre>&lt;forms loginUrl="Secure\Login.aspx"<br />       requireSSL="true" ... /&gt;  </pre>
+  <br />
+  <p>By setting <strong>requireSSL="true"</strong>, you set the <strong>secure</strong> cookie property that determines whether browsers should send the cookie back to the server. With the <strong>secure</strong> property set, the cookie is sent by the browser only to a secure page that is requested using an HTTPS URL.</p>
+  <hr />
+  <p>Adapted from Microsoft patterns &amp; practices guidance. </p>]]></Data>
+  </Content>
+</TeamMentor_Article>

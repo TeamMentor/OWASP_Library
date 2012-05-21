@@ -1,20 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="5251a1f6-3b58-4a6c-a4e4-e9e6f8dc3e29" Author="" Category="Server Hardening" Priority="J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan" Rule_Type="Checklist Item" Status="" Technology=" Any" title="Internet-facing Interfaces Are Restricted" Topic="Security" phase="Deployment" libraryId="4738d445-bc9b-456c-8b35-a35057596c16" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>
-&lt;h1&gt;Applies to&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;Web Application&lt;/div&gt;
-&lt;/li&gt;&lt;/ul&gt;
-&lt;h1&gt;What to Check For&lt;/h1&gt;
-&lt;p&gt;Check to ensure that access to Internet-facing interfaces are restricted to port 80 for HTTP and port 443 for HTTPS (SSL).&lt;/p&gt;
-&lt;br&gt;
-&lt;h1&gt;How to Fix&lt;/h1&gt;
-&lt;p&gt;Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL).&lt;/p&gt;
-&lt;h1&gt;Additional Resources&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;For outbound (Internet-facing) NICs, use IPSec or TCP filtering. For more information, see &amp;quot;&lt;a href="http://msdn2.microsoft.com/en-us/library/aa302366.aspx"&gt;How To: Use&amp;nbsp;IPSec&amp;nbsp;for&amp;nbsp;Filtering&amp;nbsp;Ports and&amp;nbsp;Authentication&lt;/a&gt;&amp;quot;.&lt;/li&gt;&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;Adapted from Microsoft patterns &amp;amp; practices guidance.&lt;/p&gt;
-</content>
-</guidanceItem>
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="699047278" Content_Hash="-171814527">
+  <Metadata>
+    <Id>5251a1f6-3b58-4a6c-a4e4-e9e6f8dc3e29</Id>
+    <Library_Id>4738d445-bc9b-456c-8b35-a35057596c16</Library_Id>
+    <Title>Internet-facing Interfaces Are Restricted</Title>
+    <Category>Server Hardening</Category>
+    <Phase>Deployment</Phase>
+    <Technology> Any</Technology>
+    <Type>Checklist Item</Type>
+    <DirectLink>Internet-facing Interfaces Are Restricted</DirectLink>
+    <Tag />
+    <Security_Demand />
+    <Author />
+    <Priority>J.D. Meier, Alex Mackman, Michael Dunner, Srinath Vasireddy, Ray Escamilla and Anandha Murukan</Priority>
+    <Status />
+  </Metadata>
+  <Content Sanitized="true" DataType="Html">
+    <Data><![CDATA[<h1>What to Check For</h1>
+  <p>Check to ensure that access to Internet-facing interfaces are restricted to port 80 for HTTP and port 443 for HTTPS (SSL).</p>
+  <h1>How to Fix</h1>
+  <p>Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL).</p>
+  <hr />
+  <p>Adapted from Microsoft patterns &amp; practices guidance.</p>]]></Data>
+  </Content>
+</TeamMentor_Article>

@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="0ad428be-72ab-4438-b6c9-b585f0f54948" Author="" Category="Input and Data Validation" Priority="" Rule_Type="Guideline" Status="" Technology=" Any" title="Don't Use Redirects Or Forwards If Possible" Topic="Security" phase="Design" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;Applies to&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;Web Applications&lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;What to Do&lt;/h1&gt;&lt;p&gt;Avoid using redirects or forwards if possible.&lt;/p&gt;&lt;h1&gt;Why&lt;/h1&gt;&lt;p&gt;Redirects or forwards may be manipulated by an attacker to create hyperlinks that appear to point to legitimate sites, but actually point to attacker-controlled malicious pages. This technique is oftened used by phishers to trick people into trusting a fake web site.&lt;/p&gt;&lt;h1&gt;When&lt;/h1&gt;&lt;p&gt;Use this guideline when writing a web application that uses redirects or forwards. Avoid using redirects or forwards in web applications, if possible.&lt;/p&gt;&lt;h1&gt;How&lt;/h1&gt;&lt;p&gt;Perform the following actions to avoid using redirects or forwards:&lt;/p&gt;&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Enumerate redirects and forwards.&lt;/strong&gt; Review application code to find all redirects and forwards used by the application.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Review application design.&lt;/strong&gt; Determine how redirects and forwards figure into the application design. Consider making design changes to remove the need for redirects and forwards.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Remove redirects or forwards.&lt;/strong&gt; Remove the redirects and forwards that are not necessary after changes to the application design.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Secure the remaining redirects or forwards.&lt;/strong&gt; If there appears to be no reasonable way to get rid of redirects or forwards, use related guidelines to secure the remaining redirects or forwards.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h1&gt;Problem Example&lt;/h1&gt;&lt;p&gt;Consider an on-line banking application that has an insecure redirect:&lt;/p&gt;&lt;pre&gt;http://www.onlinebank.com/redirect.asp?url=[destination]&lt;/pre&gt;&lt;p&gt;A phisher may create the following hyperlink to point to his own site and send it in spam messages to millions of people:&lt;/p&gt;&lt;pre&gt;http://www.onlinebank.com/redirect.asp?url=www.phisher.com&lt;/pre&gt;&lt;p&gt;When a user sees a link that appears to point to his bank at onlinebank.com in an e-mail message, he clicks that link and sees a web site that looks exactly like the bank's, but is actually a phishing web site used to steal authentication credentials. The user enters his account number and PIN into the web page, receives an error message telling him to try again, and is redirected to the bank's real site. After entering his credentials again, the user successfuly views his account. However, the phisher now has the user's online banking information.&lt;/p&gt;&lt;h1&gt;Solution Example&lt;/h1&gt;&lt;p&gt;The best solution to unvalidated redirects or forwards is to not use redirects or forwards at all. Considering the problem example above, a simple solution would be to remove the redirect.asp page after making the necessary changes to the application design.&lt;/p&gt;&lt;h1&gt;Additional Resources&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;For more information about unvalidated redirects and forwards, please see &lt;a href="http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards"&gt;http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;&lt;h1&gt;Related Items&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="ruledisplay:f53c44e4-a08e-437c-a40d-ec3db00baca7"&gt;Calculate Destinations of Redirects and Forwards Without User Input&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ruledisplay:83896e9e-a4cd-434c-980a-276c660984da"&gt;Use Mapping Values When Redirecting on User Input&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ruledisplay:feea0d0c-ff5b-4c30-8f24-483fef3acb33"&gt;Validate Destinations of Redirects and Forwards&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ruledisplay:9680fe6b-230c-4794-9777-cae02aa597d7"&gt;URL Redirection Attack&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ruledisplay:1b4602a7-88c5-4255-8f39-4fae73546608"&gt;How to Test for URL Redirection Bugs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ruledisplay:15e88928-1cbc-4fdd-8640-90319c81c178"&gt;Phishing Attack&lt;br&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</content>
-</guidanceItem>
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="856043699" Content_Hash="-1996235025">
+  <Metadata>
+    <Id>0ad428be-72ab-4438-b6c9-b585f0f54948</Id>
+    <Library_Id>4738d445-bc9b-456c-8b35-a35057596c16</Library_Id>
+    <Title>Don't Use Redirects Or Forwards If Possible</Title>
+    <Category>Input and Data Validation</Category>
+    <Phase>Design</Phase>
+    <Technology> Any</Technology>
+    <Type>Guideline</Type>
+    <DirectLink>Don't Use Redirects Or Forwards If Possible</DirectLink>
+    <Tag />
+    <Security_Demand />
+    <Author />
+    <Priority />
+    <Status />
+  </Metadata>
+  <Content Sanitized="true" DataType="Html">
+    <Data><![CDATA[<h1>What to Do</h1>
+  <p>Avoid using redirects or forwards if possible.</p>
+  <h1>Why</h1>
+  <p>Redirects or forwards may be manipulated by an attacker to create hyperlinks that appear to point to legitimate sites, but actually point to attacker-controlled malicious pages. This technique is oftened used by phishers to trick people into trusting a fake web site.</p>
+  <h1>When</h1>
+  <p>Use this guideline when writing a web application that uses redirects or forwards. Avoid using redirects or forwards in web applications, if possible.</p>
+  <h1>How</h1>
+  <p>Perform the following actions to avoid using redirects or forwards:</p>
+  <br />
+  <ol>
+    <li>
+      <p>
+        <strong>Enumerate redirects and forwards.</strong> Review application code to find all redirects and forwards used by the application.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Review application design.</strong> Determine how redirects and forwards figure into the application design. Consider making design changes to remove the need for redirects and forwards.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Remove redirects or forwards.</strong> Remove the redirects and forwards that are not necessary after changes to the application design.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Secure the remaining redirects or forwards.</strong> If there appears to be no reasonable way to get rid of redirects or forwards, use related guidelines to secure the remaining redirects or forwards.</p>
+    </li>
+  </ol>
+  <h1>Problem Example</h1>
+  <p>Consider an on-line banking application that has an insecure redirect:</p>
+  <pre>http://www.onlinebank.com/redirect.asp?url=[destination]</pre>
+  <p>A phisher may create the following hyperlink to point to his own site and send it in spam messages to millions of people:</p>
+  <pre>http://www.onlinebank.com/redirect.asp?url=www.phisher.com</pre>
+  <p>When a user sees a link that appears to point to his bank at onlinebank.com in an e-mail message, he clicks that link and sees a web site that looks exactly like the bank's, but is actually a phishing web site used to steal authentication credentials. The user enters his account number and PIN into the web page, receives an error message telling him to try again, and is redirected to the bank's real site. After entering his credentials again, the user successfuly views his account. However, the phisher now has the user's online banking information.</p>
+  <h1>Solution Example</h1>
+  <p>The best solution to unvalidated redirects or forwards is to not use redirects or forwards at all. Considering the problem example above, a simple solution would be to remove the redirect.asp page after making the necessary changes to the application design.</p>
+  <h1>Additional Resources</h1>
+  <ul>
+    <li>For more information about unvalidated redirects and forwards, please see <a href="http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards">http://www.owasp.org/index.php/Top_10_2010-A10-Unvalidated_Redirects_and_Forwards</a></li>
+  </ul>]]></Data>
+  </Content>
+</TeamMentor_Article>

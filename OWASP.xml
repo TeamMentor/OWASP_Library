@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <guidanceExplorer xmlns="urn:microsoft:guidanceexplorer">
   <library name="4738d445-bc9b-456c-8b35-a35057596c16" caption="OWASP" readProtection="ReadWrite" suscribed="false" webSuscribed="true" url="http://localhost:10001/OnlineStorage.asmx">
     <libraryStructure>
-      <folder caption="OWASP Top 10 -  2010">
+      <folder caption="OWASP Top 10 -  2010" folderId="30b034e7-f3a2-4a81-acbc-e357129711ff">
         <columns>
           <column source="Type" caption="Type" sort="Ascending" visible="true" width="111" position="1" />
           <column source="Topic" caption="Topic" sort="Ascending" visible="true" width="111" position="2" />
@@ -214,6 +214,8 @@
             <item>5339f0d4-6052-44a5-9d83-09a116ffdd13</item>
             <item>f527a834-7f1b-41dd-9383-d386de47b9da</item>
             <item>d4ae5fa9-2156-42d1-8718-754a7df4e1f5</item>
+            <item>00000000-0000-0000-0000-0000008d7241</item>
+            <item>00000000-0000-0000-0000-0000001cc05b</item>
           </items>
         </view>
         <view id="23b04762-4f47-4b73-b22b-5cdf3026ea27" caption="A06: Security Misconfiguration" creationDate="2011-01-21T18:22:44.5759844Z" description="" author="" rootView="false">

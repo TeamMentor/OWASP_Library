@@ -1,14 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="5ce93f58-53f1-4cb6-acac-b15f71b79bc7" 
-               Author="" 
-               Category="Authentication" 
-               Priority="2" 
-               Rule_Type="Checklist Item" 
-               Status="" 
-               Technology="Java" 
-               title="Access to the Credential Store is Limited" 
-               Topic="Security" 
-               phase="Implementation" 
-               xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;h1&gt;What to Check For&lt;/h1&gt;&lt;p&gt;Ensure that access to the credential store is limited to administrators with the correct privileges. &lt;/p&gt;&lt;h1&gt;Why&lt;/h1&gt;&lt;p&gt;Unauthorized access to the credential store can lead to users' credentials being overwritten; therefore, allowing the attacker to gain access to application resources without obtaining valid credentials prior to the attack.&lt;/p&gt;&lt;h1&gt;How to Check&lt;/h1&gt;&lt;p&gt;Follow these steps to ensure that the credential store is properly secured: &lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Identify all routines that access the store. &lt;/strong&gt;Locate all routines within your application that access the credential store. Such routines include:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Authenticating users &lt;/li&gt;&lt;li&gt;Creating users &lt;/li&gt;&lt;li&gt;Modifying users &lt;/li&gt;&lt;li&gt;Changing user passwords&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Verify that credentials for accessing the store are secured. &lt;/strong&gt;Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. &lt;/p&gt;&lt;ul&gt;&lt;li&gt;If your application &lt;strong&gt;uses a database&lt;/strong&gt; for its credential repository, follow the &lt;a href="ruledisplay:347C1DE9-9132-4B10-9523-64059EAA9F48"&gt;Connection Strings are Secured&lt;/a&gt; checklist to ensure that access credentials and connection strings are secured properly. &lt;/li&gt;&lt;li&gt;If your application &lt;strong&gt;does not use a database&lt;/strong&gt; for its credential repository, consult the &lt;a href="ruledisplay:FA468EF2-F27F-40B8-BD43-302F66AA9C26"&gt;Plaintext Sensitive Data is Not Stored&lt;/a&gt; checklist. Verify that only the appropriate components of your application are able to access the credential store.&lt;br&gt;&lt;br&gt;Example of how &lt;strong&gt;not&lt;/strong&gt; to handle access to the credential store: &lt;/li&gt;&lt;/ul&gt;&lt;br&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;pre&gt;// The application discloses the credentials necessary for accessing the user database&lt;br&gt;DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());&lt;br&gt;Connection cn = DriverManager.getConnection("jdbc:oracle:thin:@testbox:1521:orcl2", "myapp", "pass"); &lt;/pre&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Check the access controls for your credential store.&lt;/strong&gt; Ensure that your application's credential store has the appropriate security in place. For instance, if your application uses a database for its credential store, verify that the database server is secured properly.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;ol&gt;&lt;/ol&gt;&lt;h1&gt;Problem Example&lt;/h1&gt;&lt;p&gt;The following code authenticates a user based on their credentials. Because the code discloses the credentials to the user database, anybody with access to the code also has&amp;nbsp;access to the credential store. &lt;/p&gt;&lt;blockquote&gt;&lt;pre&gt;public boolean validateUser(String user, char[] pass)&lt;br&gt; {&lt;br&gt;      boolean valid;&lt;br&gt;      Connection cn;&lt;br&gt;       // Prepare credentials before querying the credential store&lt;br&gt;      ...&lt;br&gt;       try&lt;br&gt;      {&lt;br&gt;            // The application discloses the credentials necessary for&lt;br&gt;            // accessing the user database&lt;br&gt;            DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());&lt;br&gt;            cn = DriverManager.getConnection("jdbc:oracle:thin:@testbox:1521:orcl2",&lt;br&gt;                                              "myapp", "pass");&lt;br&gt;            // Query the credential store and perform the rest&lt;br&gt;            // of the authentication steps&lt;br&gt;            ...&lt;br&gt;      }&lt;br&gt;      catch (SQLException se)&lt;br&gt;      {&lt;br&gt;            // Add the appropriate logging and exception handling mechanisms&lt;br&gt;            return false;&lt;br&gt;      }&lt;br&gt;       return valid;&lt;br&gt;}&lt;/pre&gt;&lt;/blockquote&gt;&lt;h1&gt;Related Guideline&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="ruledisplay:AEE6B133-B34C-442F-9051-0D8DC51F072E"&gt;Guideline: Limit Access to the Credential Store (Java Web Application)&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;</content>
-</guidanceItem>
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="1676204695" Content_Hash="642580630">
+  <Metadata>
+    <Id>5ce93f58-53f1-4cb6-acac-b15f71b79bc7</Id>
+    <Library_Id>4738d445-bc9b-456c-8b35-a35057596c16</Library_Id>
+    <Title>Access to the Credential Store is Limited</Title>
+    <Category>Authentication</Category>
+    <Phase>Implementation</Phase>
+    <Technology>Java</Technology>
+    <Type>Checklist Item</Type>
+    <DirectLink>Access to the Credential Store is Limited</DirectLink>
+    <Tag />
+    <Security_Demand />
+    <Author />
+    <Priority>2</Priority>
+    <Status />
+  </Metadata>
+  <Content Sanitized="true" DataType="Html">
+    <Data><![CDATA[<h1>What to Check For</h1>
+  <p>Ensure that access to the credential store is limited to administrators with the correct privileges. </p>
+  <h1>Why</h1>
+  <p>Unauthorized access to the credential store can lead to users' credentials being overwritten; therefore, allowing the attacker to gain access to application resources without obtaining valid credentials prior to the attack.</p>
+  <h1>How to Check</h1>
+  <p>Follow these steps to ensure that the credential store is properly secured: </p>
+  <ol>
+    <li>
+      <p>
+        <strong>Identify all routines that access the store. </strong>Locate all routines within your application that access the credential store. Such routines include:</p>
+      <ul>
+        <li>Authenticating users </li>
+        <li>Creating users </li>
+        <li>Modifying users </li>
+        <li>Changing user passwords</li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        <strong>Verify that credentials for accessing the store are secured. </strong>Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. </p>
+      <ul>
+        <li>If your application <strong>uses a database</strong> for its credential repository, ensure that access credentials and connection strings are secured properly. </li>
+        <li>If your application <strong>does not use a database</strong> for its credential repository, verify that only the appropriate components of your application are able to access the credential store.<br /><br />Example of how <strong>not</strong> to handle access to the credential store: </li>
+      </ul>
+      <p />
+      <blockquote>
+        <pre>// The application discloses the credentials necessary for accessing the user database<br />DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());<br />Connection cn = DriverManager.getConnection("jdbc:oracle:thin:@testbox:1521:orcl2", "myapp", "pass"); </pre>
+      </blockquote>
+    </li>
+    <li>
+      <p>
+        <strong>Check the access controls for your credential store.</strong> Ensure that your application's credential store has the appropriate security in place. For instance, if your application uses a database for its credential store, verify that the database server is secured properly.</p>
+    </li>
+  </ol>
+  <ol>
+  </ol>
+  <h1>How to Fix</h1>
+  <p>Follow these steps to limit the access to the credential store: </p>
+  <ol>
+    <li>
+      <p>
+        <strong>Avoid disclosing the location of the store. </strong>Do not disclose the location of the store within your application. Do not let&amp;nbsp;regular application users know where the store is located. </p>
+    </li>
+    <li>
+      <p>
+        <strong>Secure credentials required for accessing the store. </strong>Store your credentials within a configuration file and encrypt them. Place the encryption key within a keystore that is encrypted using a local account password.</p>
+    </li>
+    <li>
+      <p>
+        <strong>Restrict access to repository. </strong>Limit the number of users that can access the store. If it is a file on the local file system, set the appropriate permissions to restrict the read/write access. If it is a database, restrict the accounts that can access the database server.</p>
+    </li>
+  </ol>
+  <h1>Problem Example</h1>
+  <p>The following code authenticates a user based on their credentials. Because the code discloses the credentials to the user database, anybody with access to the code also has access to the credential store. </p>
+  <pre>public boolean validateUser(String user, char[] pass)<br />{<br />      boolean valid;<br />      Connection cn;<br /><br />      // Prepare credentials before querying the credential store<br />      ...<br />      try<br />      {<br />            // The application discloses the credentials necessary for<br />            // accessing the user database<br />            DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());<br />            cn = DriverManager.getConnection("jdbc:oracle:thin:@testbox:1521:orcl2",<br />                                             "myapp", "pass");<br />            // Query the credential store and perform the rest<br />            // of the authentication steps<br />            ...<br />      }<br />      catch (SQLException se)<br />      {<br />            // Add the appropriate logging and exception handling mechanisms<br />            return false;<br />      }<br /><br />      return valid;<br />}</pre>
+  <h1>Solution Example</h1>
+  <p>The following code authenticates a user based on their credentials. The code relies on other parts of the application to handle database connectivity. Therefore, the code does not reveal the application's credentials to the credential store. </p>
+  <pre>public boolean validateUser(String user, char[] pass)<br />{<br />      boolean valid;<br />      // Prepare credentials before querying the credential store<br />      ...<br />      try<br />      {<br />            // The credentials to the application's user database<br />            // are not hard-coded in the authentication routine<br />            cn = MyApp.getDBConnection();<br />            // Query the credential store and perform the rest<br />            // of the authentication steps<br />            ...<br />      }<br />      catch (SQLException se)<br />      {<br />            // Add the appropriate logging and exception handling mechanisms<br />            return false;<br />      }<br />      return valid;<br />}</pre>]]></Data>
+  </Content>
+</TeamMentor_Article>

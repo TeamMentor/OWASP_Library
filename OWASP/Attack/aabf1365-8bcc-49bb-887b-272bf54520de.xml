@@ -1,32 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<guidanceItem id="aabf1365-8bcc-49bb-887b-272bf54520de" Author="" Category="Sensitive Data" Priority="2" Rule_Type="Attack" Status="" Technology=" Any" title="Statistical Analysis Attack" Topic="Security" phase="Any" xmlns="urn:microsoft:guidanceexplorer:guidanceItem">
-  <content>&lt;br&gt;&lt;br&gt;&lt;h1 class="section"&gt;Applies To&lt;/h1&gt;
-&lt;p&gt;Applications encrypting sensitive data.&lt;/p&gt;
-&lt;h1 class="section"&gt;Description&lt;/h1&gt;
-&lt;p&gt;Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets. &lt;/p&gt;
-&lt;h1 class="section"&gt;Impact&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Discovery of encryption keys (WEP Key Attack) 
-&lt;/li&gt;&lt;li&gt;Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more 
-&lt;/li&gt;&lt;li&gt;Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.&lt;/li&gt;&lt;/ul&gt;
-&lt;h1 class="section"&gt;Vulnerabilities&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;False sense of security when using encryption libraries&lt;/li&gt;&lt;/ul&gt;
-&lt;h1 class="section"&gt;Countermeasures&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Always be sure you know what is and what is not being encrypted 
-&lt;/li&gt;&lt;li&gt;Understand what bits of information can be discovered by analyzing packets or information being sent on the network 
-&lt;/li&gt;&lt;li&gt;Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks&lt;/li&gt;&lt;/ul&gt;
-&lt;h1 class="section"&gt;Additional Resources&lt;/h1&gt;
-&lt;h1 class="section"&gt;Related Items&lt;/h1&gt;&lt;ul&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:3B657A67-F660-4DB5-9267-6E0FE2DAA1EB"&gt;Attack: Chosen Ciphertext Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:DEBB5734-39D0-4922-BDEE-1E0547E22DAD"&gt;Attack: Chosen Plaintext Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:6D0F24EA-B130-4AAE-9EDF-0B27F04B3145"&gt;Attack: Credentials Brute Force Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:A483E10E-2C4F-4947-863F-81CF93DD5FEA"&gt;Attack: Credentials Dictionary Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:24D078E3-A02F-4EDF-A6EA-DA0E3E5FFE5E"&gt;Attack: Key Bruteforce Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:4572037A-2166-4AD1-8E73-D623E468A7B9"&gt;Attack: Information Disclosure Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:C7E4A74A-9557-43E4-8560-AD3193E3B9EE"&gt;Attack: Session Prediction Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:13EE90D9-B0F6-45D6-913A-BA8527525A04"&gt;Attack: Traffic Analysis Attack&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt; &lt;a href="ruledisplay:58543D04-18B3-4F6E-BBEC-1FEDC89F0ED6"&gt;Attack: Weak Password Attack&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
-</guidanceItem>
+<?xml version="1.0"?>
+<TeamMentor_Article Metadata_Hash="245575185" Content_Hash="-1570501964">
+  <Metadata>
+    <Id>aabf1365-8bcc-49bb-887b-272bf54520de</Id>
+    <Library_Id>4738d445-bc9b-456c-8b35-a35057596c16</Library_Id>
+    <Title>Statistical Analysis Attack</Title>
+    <Category>Encryption</Category>
+    <Phase>Any</Phase>
+    <Technology> Any</Technology>
+    <Type>Attack</Type>
+    <DirectLink>Statistical Analysis Attack</DirectLink>
+    <Tag />
+    <Security_Demand />
+    <Author />
+    <Priority>2</Priority>
+    <Status />
+  </Metadata>
+  <Content Sanitized="true" DataType="Html">
+    <Data><![CDATA[<h1 class="section">Applies To</h1>
+  <p>
+  </p>
+  <ul>
+    <li>Applications that use encryption.</li>
+  </ul>
+  <p />
+  <h1 class="section">Description</h1>
+  <p>Given large sets of encrypted data an attacker may be able to discover sensitive data by comparing large sets of encrypted packets. An attacker will attempt to gather large amounts of packets to discern some information about a network or software system. The attacker may be able to do this by artificially injecting packets into the system to see how they are dealt with by the system or by passively listening to network traffic for interesting packets. </p>
+  <h1 class="section">Impact</h1>
+  <ul>
+    <li>Discovery of encryption keys (WEP Key Attack) 
+</li>
+    <li>Discovery of packet meta-data such as origin, destination, time stamp, traffic patterns, physical location, network topology, and more 
+</li>
+    <li>Unencrypted data – an attack listening to all encrypted e-mail would still recover all unencrypted header information such as to, from, cc, timestamp, subject, etc.</li>
+  </ul>
+  <h1 class="section">Vulnerabilities</h1>
+  <ul>
+    <li>False sense of security when using encryption libraries</li>
+  </ul>
+  <h1 class="section">Countermeasures</h1>
+  <ul>
+    <li>Always be sure you know what is and what is not being encrypted 
+</li>
+    <li>Understand what bits of information can be discovered by analyzing packets or information being sent on the network 
+</li>
+    <li>Consider using a tool that will help hide some information commonly gathered by statistical analysis attacks</li>
+  </ul>
+  <ul>
+  </ul>]]></Data>
+  </Content>
+</TeamMentor_Article>
