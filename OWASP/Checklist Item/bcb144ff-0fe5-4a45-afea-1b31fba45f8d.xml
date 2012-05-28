@@ -34,7 +34,7 @@
     </li>
     <li>
       <p>
-        <strong>Ensure your application tracks login attempts. </strong>All authentication procedures record the number of authentication attempts for each user. The login counter for each user&amp;nbsp;should be&amp;nbsp;reset to 0 upon a successful authentication</p>
+        <strong>Ensure your application tracks login attempts. </strong>All authentication procedures should record the number of authentication attempts for each user. The login counter for each user&amp;nbsp;should be&amp;nbsp;reset to 0 upon a successful authentication</p>
     </li>
     <li>
       <p>

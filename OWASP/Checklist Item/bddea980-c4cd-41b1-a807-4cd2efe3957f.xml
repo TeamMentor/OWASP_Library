@@ -59,7 +59,7 @@
       <strong>Identify database entry points. </strong>Identify all locations within your application that interface with the database servers. Potential sources of input include: <ul><li>URL-based parameters </li><li>Form-based parameters </li><li>Hidden fields </li><li>Cookies </li><li>Local filesystem </li><li>Javascript variables</li></ul></li>
     <li>
       <p>
-        <strong>Create a set of validators. </strong>Build a set of validators that work with the database-specific language. Determine the appropriate validation at each validator. Centralize the validators as it helps strengthen your code by limiting the amount of scattered validation code throughout the component. Place the validators along the database entry points. All data should pass through the validators before transmitted to the database servers.</p>
+        <strong>Create a set of validators. </strong>Determine the appropriate validation at each validator. Centralize the validators as it helps strengthen your code by limiting the amount of scattered validation code throughout the component. Place the validators along the database entry points. All data should pass through the validators before transmitted to the database servers.</p>
     </li>
     <li>
       <p>

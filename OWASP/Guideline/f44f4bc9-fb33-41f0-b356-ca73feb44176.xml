@@ -3,12 +3,12 @@
   <Metadata>
     <Id>f44f4bc9-fb33-41f0-b356-ca73feb44176</Id>
     <Library_Id>4738d445-bc9b-456c-8b35-a35057596c16</Library_Id>
-    <Title>Partition Application Between Public And Private Domains</Title>
+    <Title>Partition the Application Between Public And Private Domains</Title>
     <Category>Authentication</Category>
     <Phase>Deployment</Phase>
     <Technology>ASP.NET 3.5</Technology>
     <Type>Guideline</Type>
-    <DirectLink>Partition Application Between Public And Private Domains</DirectLink>
+    <DirectLink>Partition the Application Between Public And Private Domains</DirectLink>
     <Tag />
     <Security_Demand />
     <Author />
@@ -27,12 +27,12 @@
   <ol>
     <li>
       <p>
-        <strong>Determine roles</strong>: Define the various types of user and their rights. Build a security policy that documents the rights required to access each page of your application.</p>
+        <strong>Determine roles</strong>: Define the various types of users and their rights. Build a security policy that documents the rights required to access each page of your application.</p>
     </li>
     <li>
       <p>
-        <strong>Determine pages that should require SSL</strong>: This would include pages that transmit credentials, unprotected authentication cookies, or sensitive user information such as credit card or social security numbers. Such pages should be transmitted using SSL only.</p>
-      <p>It should be noted that the Forms Authentication cookie is unprotected in the sense that it is vulnerable to HTTP Replay Attacks. As such, any page in a Forms Auth ASP.Net application that requires an authenticated user should only be accessible via SSL.</p>
+        <strong>Determine pages that should require SSL</strong>: This would include pages that transmit credentials, unprotected authentication cookies, or sensitive user information such as credit card or social security numbers. Such pages should be transmitted over SSL only.</p>
+      <p>It should be noted that the Forms Authentication cookie is unprotected in the sense that it is vulnerable to HTTP Replay Attacks. As such, any page in a Forms Auth ASP.Net application that requires an authenticated user should only be accessible over SSL.</p>
     </li>
     <li>
       <p>

@@ -19,7 +19,7 @@
     <Data><![CDATA[<h1>What to Do</h1>
   <p>You should Partition your Web Site so that secure pages that require authenticated access are placed in a subdirectory that is separate from the anonymously accessible pages.</p>
   <h1>Why</h1>
-  <p>To prevent unauthenticated users from accessing the restricted pages. Any attempt to do so forces a Forms login.</p>
+  <p>To prevent unauthenticated users from accessing the restricted pages.</p>
   <h1>When</h1>
   <p>If your Web application requires users to complete authentication before they can access specific pages, make sure that the restricted pages are placed in a separate directory away from publicly accessible pages. </p>
   <h1>How</h1>

@@ -43,7 +43,7 @@
     </li>
     <li>
       <p>
-        <strong>Verify that session cookies are sent over encrypted channels. </strong>Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions are sensitive in nature.</p>
+        <strong>Verify that session cookies are sent over encrypted channels. </strong>Ensure your application transmits session cookies over encrypted channels. Although this is not required for non-sensitive transactions, it is mandatory for any transactions that are sensitive in nature.</p>
     </li>
     <li>
       <span>
@@ -93,7 +93,7 @@
     <li>
       <p />
       <strong>Ensure cookies are sent over encrypted channels. </strong>
-      <span>Mark cookies sent over SSL as <em>Secure</em>. Use <em>Cookie.setSecure</em> to require SSL when sending out the given cookie. It is recommended to avoid sending session cookies over unencrypted channels as session hijacking is made much easier. Use <em>ServletRequest.isSecure</em> to verify whether SSL is being used. There is a <em>cookie-secure</em> attribute that can be set for the sessiond id cookie in the web.xml file.<p /></span>
+      <span>Mark cookies sent over SSL as <em>Secure</em>. Use <em>Cookie.setSecure</em> to require SSL when sending out the given cookie. It is recommended to avoid sending session cookies over unencrypted channels as session hijacking is made much easier. Use <em>ServletRequest.isSecure</em> to verify whether SSL is being used.&amp;nbsp;There is a cookie-secure attribute that can be set for the session id cookie in the web.xml file.<p /></span>
     </li>
   </ol>
   <p>

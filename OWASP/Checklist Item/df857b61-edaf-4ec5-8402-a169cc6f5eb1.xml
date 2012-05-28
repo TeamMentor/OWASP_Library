@@ -23,7 +23,7 @@
     </li>
   </ul>
   <h1>What to Check For</h1>
-  <p>Check to ensure that remote administration of the server is secured and configured for encryption, low session time-outs, and account lockouts.</p>
+  <p>Ensure that all remote administrative sessions take place over an encrypted channel, sessions timed out quickly and accounts locked out when suspicious behavior is detected.</p>
   <br />
   <h1>How to Fix</h1>
   <p>Administrators often need to be able to administer multiple servers. Make sure the requirements of your remote administration solution do not compromise security. If you need remote administration capabilities, then the following recommendations help improve

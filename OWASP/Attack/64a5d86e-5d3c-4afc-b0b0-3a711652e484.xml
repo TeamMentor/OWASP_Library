@@ -18,10 +18,11 @@
   <Content Sanitized="true" DataType="Html">
     <Data><![CDATA[<h1>Applies To</h1>
   <p>
-    <ul>
-      <li>Applications using cryptography.</li>
-    </ul>
   </p>
+  <ul>
+    <li>Applications using cryptography.</li>
+  </ul>
+  <p />
   <h1>Description</h1>
   <p>A keystore is a secure location on disk or in memory that can be used to store cryptographic keys or trusted certificates. Typically, these keys are bound to the machine and only available to a certain application. If the application uses a weak keystore, it may be possible to recover the keys and certificates from the keystore without proper credentials.</p>
   <h1>Impact</h1>
@@ -50,7 +51,7 @@
     </li>
     <li>
       <p>
-        <strong>Configure Your Keystore Correctly:</strong> Ensure that you know how to properly configure the key store in your environment. Ensure that any ACLs on the key store are locked down as tightly as possible while still allowing your system to function. For instance, after the initial install, it is unlikely that your application will need rights to add keys to the key store, nor rights to change the permissions on the key store; if possible, make sure the application gives these up after installation. Ensure that, if possible, all cryptographic operations occurr within the scope of the protected keystore, instead of manual exporting keys from the store or reading the bits out; if you can do this and you can lock your key store down even further, ensure that these operations cannot be performed on the key store. If you have a choice of keys or algorithms used to protect keys in the key store, ensure that they are appropriately strong.</p>
+        <strong>Configure Your Keystore Correctly:</strong> Ensure that you know how to properly configure the key store in your environment. Ensure that any ACLs on the key store are locked down as tightly as possible while still allowing your system to function. For instance, after the initial install, it is unlikely that your application will need rights to add keys to the key store, nor rights to change the permissions on the key store; if possible, make sure the application gives these up after installation. Ensure that, if possible, all cryptographic operations occur within the scope of the protected keystore, instead of manually exporting keys from the store or reading the bits out; if you can do this and you can lock your key store down even further, ensure that these operations cannot be performed on the key store. If you have a choice of keys or algorithms used to protect keys in the key store, ensure that they are appropriately strong.</p>
     </li>
     <li>
       <p>

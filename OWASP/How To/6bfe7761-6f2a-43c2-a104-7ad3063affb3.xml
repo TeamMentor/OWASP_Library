@@ -94,7 +94,7 @@
   </ul>
   <p>The next sections describe each of these.</p>
   <h1>Step 1. Use ASP.NET Request Validation</h1>
-  <p>By default, ASP.NET request validation detects any HTML elements and reserved characters in data posted to the server. This helps prevent users from inserting script into your application. Request validation checks all input data against a hard-coded list of potentially dangerous values. If a match occurs, it throws an exception of type <strong>HttpRequestValidationException</strong>.</p>
+  <p>By default, ASP.NET request validation detects any HTML elements and reserved characters in data posted to the server. This helps prevent users from inserting scripts into your application. Request validation checks all input data against a hard-coded list of potentially dangerous values. If a match occurs, it throws an exception of type <strong>HttpRequestValidationException</strong>.</p>
   <p>You can disable request validation in your Web.config application configuration file by adding a &lt;<strong>pages</strong>&gt; element with <strong>validateRequest="false"</strong> or on an individual page by setting <strong>ValidateRequest="false"</strong> on the <strong>@ Pages</strong> element. </p>
   <p>If you need to disable request validation, you should disable it only on the affected page. An example of this is when you have a page with a free-format text field that accepts HTML-formatted input.</p>
   <h2>Confirm that ASP.NET Request Validation Is Enabled in Machine.config</h2>
@@ -151,7 +151,7 @@
   </div>
   <p>The regular expression used in the preceding code example limits an input name field to alphabetic characters (lowercase and uppercase), space characters, the single apostrophe for names such as O'Dell, and the period. In addition, the field length is constrained to 40 characters.</p>
   <blockquote>
-    <strong>Note</strong>&amp;nbsp;&amp;nbsp;&amp;nbsp;The <strong>RegularExpressionValidator</strong> control automatically adds a caret (^) and dollar sign ($) as delimiters to the beginning and end of expressions if you have not added them yourself. You should add them to all of your regular expressions as good practice. Enclosing the expression in the delimiters ensures that the expression consists of the desired content and nothing else.</blockquote>
+    <strong>Note</strong>&amp;nbsp;&amp;nbsp;&amp;nbsp;The <strong>RegularExpressionValidator</strong> control automatically adds a caret (^) and dollar sign ($) as delimiters to the beginning and end of expressions if you have not added them yourself. You should add them to all of your regular expressions as a good practice.&amp;nbsp; Enclosing the expression in the delimiters ensures that the expression consists of the desired content and nothing else.</blockquote>
   <h3>Using the Regex Class</h3>
   <p>If you are not using server controls (which means you cannot use the validator controls), or you need to validate input from sources other than form fields (such as from query string parameters or cookies), you can use a <strong>Regex</strong> class.</p>
   <p>

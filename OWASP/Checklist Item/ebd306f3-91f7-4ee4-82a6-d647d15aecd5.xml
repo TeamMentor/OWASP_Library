@@ -17,7 +17,7 @@
   </Metadata>
   <Content Sanitized="true" DataType="Html">
     <Data><![CDATA[<h1>What to Check For</h1>
-  <p>Check to ensure that&amp;nbsp;all unused services are disabled. Also make sure that Trivial File Transfer Protocol (TFTP) is disabled, Internet-facing administration points are removed, and ACLs are configured to limit administrative access.</p>
+  <p>Check to ensure that&amp;nbsp;all unused services are disabled. Also make sure that Trivial File Transfer Protocol (TFTP) is disabled, Internet-facing administration points are removed, and ACLs configured to limit administrative access.</p>
   <hr />
   <p>Adapted from Microsoft patterns &amp; practices guidance.</p>]]></Data>
   </Content>

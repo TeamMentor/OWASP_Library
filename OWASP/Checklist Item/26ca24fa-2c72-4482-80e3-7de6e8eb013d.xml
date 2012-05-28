@@ -45,7 +45,7 @@
             </li>
             <li>
               <p>
-                <strong>Certificate Version</strong>: Verify that your application uses SSL version 3.0 certificate.</p>
+                <strong>Certificate Version</strong>: Verify that your application uses an SSL version 3.0 certificate.</p>
             </li>
             <li>
               <p>
@@ -57,7 +57,7 @@
             </li>
             <li>
               <p>
-                <strong>Server Configuration</strong>: Verify that your application's environment has enabled HTTPS. Verify that transactions of sensitive nature are transmitted only over HTTPS connections. Check if your application's deployment descriptor (e.g. web.xml) has the <em>transport-guarantee</em> element set to <em>CONFIDENTIAL</em>:</p>
+                <strong>Server Configuration</strong>: Verify that your application's environment has enabled HTTPS. Verify that transactions of sensitive nature are made over HTTPS connections. Check if your application's deployment descriptor (e.g. web.xml) has the <em>transport-guarantee</em> element set to <em>CONFIDENTIAL</em>:</p>
               <pre>&lt;security-constraint&gt;<br />  &lt;web-resource-collection&gt;<br />    &lt;web-resource-name&gt;AcctManager&lt;/web-resource-name&gt;<br />    &lt;url-pattern&gt;/acctmanager/*&lt;/url-pattern&gt;<br />  &lt;/web-resource-collection&gt;<br />  &lt;user-data-constraint&gt;<br />    &lt;transport-guarantee&gt;<strong>CONFIDENTIAL</strong>&lt;/transport-guarantee&gt;<br />  &lt;/user-data-constraint&gt;<br />  &lt;auth-constraint&gt;<br />    &lt;role-name&gt;manager&lt;/role-name&gt;<br />  &lt;/auth-constraint&gt;<br />&lt;/security-constraint&gt;</pre>
             </li>
           </ul>
@@ -70,7 +70,7 @@
   <ol>
     <li>
       <p>
-        <strong>Identify the connections used for transmitting sensitive data. </strong>Enumerate all connections between the different servers with other servers or with the application. Identify the sensitive data that is sent over the network and the respective connections that are used for such communication.</p>
+        <strong>Identify the connections used for transmitting sensitive data. </strong>Enumerate all connections between the different servers, with other servers or with the application. Identify the sensitive data that is sent over the network and the respective connections that are used for such communication.</p>
     </li>
     <li>
       <p>
@@ -79,7 +79,7 @@
         <li>
           <strong>IPSec:</strong> IPSec is used when the encryption needs to be applied across all involved parties. Since IPSec is designed to secure connections between static hosts that are "always on," use IPSec to secure the network connections between your application's servers. Due to its nature, IPSec requires low level support; therefore, your application would need support from the operating system or a JNI component to manage it. </li>
         <li>
-          <strong>TLS/SSL:</strong> TLS/SSL provides a granular protection which&amp;nbsp;allows only&amp;nbsp;the traffic containing sensitive data to be encrypted. Because TLS/SSL has a certificate based design, it allows the protection of data between mobile hosts. Use TLS/SSL to secure the communication channel between your application and its users.<br /><br />While Java provides APIs for handling SSL encrypted traffic, it is recommended to follow the manuals associated with the&amp;nbsp;third party software that&amp;nbsp;is being used. For example, if your application connects to a database server, follow the database server's manual on setting up the encryption; if your application is web-oriented, follow the web server's documentation on setting up the SSL certificate. If your application uses SSL, ensure that you use SSL 3.0 and disable the cryptographically weak SSL 2.0 protocols.</li>
+          <strong>TLS/SSL:</strong> TLS/SSL provides a granular protection which&amp;nbsp;allows only&amp;nbsp;the traffic containing sensitive data to be encrypted. Because TLS/SSL has a certificate based design, it allows the protection of data transferred between mobile hosts. Use TLS/SSL to secure the communication channel between your application and its users.<br /><br />While Java provides APIs for handling SSL encrypted traffic, it is recommended to follow the manuals associated with the&amp;nbsp;third party software that&amp;nbsp;is being used. For example, if your application connects to a database server, follow the database server's manual on setting up the encryption; if your application is web-oriented, follow the web server's documentation on setting up the SSL certificate. If your application uses SSL, ensure that you use SSL 3.0 and disable the cryptographically weak SSL 2.0 protocols.</li>
       </ul>
     </li>
     <li>

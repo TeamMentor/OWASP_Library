@@ -21,7 +21,7 @@
   <h1>Why</h1>
   <p>Connection strings contain sensitive resource access credentials (e.g., a connection string for a SQL server resource includes a username and password.) Connection strings stored in plaintext are dangerous, because an attacker that can compromise a server will be able to read those connection strings. Even if a machine is not compromised, connection strings stored in plain text&amp;nbsp;are accessible to administrators and any other users with sufficient privileges&amp;nbsp;on the host machine and/or Windows domain.&amp;nbsp;</p>
   <h1>When</h1>
-  <p>Always encrypt connection strings. In&amp;nbsp;a web farm environment,&amp;nbsp;the RSA protected configuration provider is an effective way to encrypt and decrypt configuration file sections&amp;nbsp;because it uses asymmetric encryption to encrypt and decrypt,&amp;nbsp;meaning&amp;nbsp;the keys can easily be exported and imported&amp;nbsp;from server to server.&amp;nbsp; If the application is no deployed to a web farm environment DPAPI will work as well as RSA for encrypting connection strings.&amp;nbsp; </p>
+  <p>Always encrypt connection strings. In&amp;nbsp;a web farm environment,&amp;nbsp;the RSA protected configuration provider is an effective way to encrypt and decrypt configuration file sections&amp;nbsp;because it uses asymmetric encryption to encrypt and decrypt,&amp;nbsp;meaning&amp;nbsp;the keys can easily be exported and imported&amp;nbsp;from server to server.&amp;nbsp;If the application is not deployed to a web farm environment DPAPI will work as well as RSA for encrypting connection strings.&amp;nbsp; </p>
   <h1>How</h1>
   <p>Use the following steps to encrypt sections of your configuration files: </p>
   <ol>

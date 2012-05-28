@@ -46,37 +46,7 @@
         </li>
         <li>
           <p>
-            <strong>HTML encoding</strong>: HTML encoding is used when the echoed input is returned as regular text or HTML content. Input should be encoded by substituting certain characters with their respective HTML values:</p>
-          <blockquote>
-            <table>
-              <tbody>
-                <tr>
-                  <td>Character</td>
-                  <td>HTML value</td>
-                </tr>
-                <tr>
-                  <td>&lt;</td>
-                  <td>&lt;</td>
-                </tr>
-                <tr>
-                  <td>&gt;</td>
-                  <td>&gt;</td>
-                </tr>
-                <tr>
-                  <td>&amp;</td>
-                  <td>&amp;</td>
-                </tr>
-                <tr>
-                  <td>"</td>
-                  <td>"</td>
-                </tr>
-                <tr>
-                  <td>'</td>
-                  <td>'</td>
-                </tr>
-              </tbody>
-            </table>
-          </blockquote>
+            <strong>HTML encoding</strong>: HTML encoding is used when the echoed input is returned as regular text or HTML content. Input should be encoded by substituting certain characters with their respective HTML values.</p>
         </li>
         <li>
           <p>
@@ -98,7 +68,7 @@
     </li>
     <li>
       <p>
-        <strong>Apply the encoding. </strong>After identifying the echoed input and determining the appropriate encoding method, apply the encoding before the input is returned to the client. There are different encoding libraries available. Different libraries have different capabilities and weaknesses. Please, refer to the vendor's documentation for each potential encoding library.</p>
+        <strong>Apply the encoding. </strong>After identifying the echoed input and determining the appropriate encoding method, apply the encoding before the input is returned to the client. There are different encoding libraries available. Different libraries have different capabilities and weaknesses. Please refer to the vendor's documentation for each potential encoding library.</p>
     </li>
   </ol>
   <h1>Problem Example</h1>

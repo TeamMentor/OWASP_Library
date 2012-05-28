@@ -48,7 +48,7 @@
           <ul>
             <li>
               <p>
-                <strong>Hashing: </strong>Hashing is a one-way mechanism for protecting sensitive data in a non-retrievable way. If your application uses hashing as means for protecting sensitive data, verify that the following pieces are in place:</p>
+                <strong>Hashing: </strong>Hashing is a one-way mechanism for protecting sensitive data in a non-retrievable way. If your application uses hashing as a means for protecting sensitive data, verify that the following pieces are in place:</p>
               <ul>
                 <li>
                   <strong>Salt</strong>: Your application generates its salt using the SecureRandom class. </li>
@@ -62,7 +62,7 @@
             </li>
             <li>
               <p>
-                <strong>Encryption:</strong> Encryption is a mechanism for protecting sensitive data in a retrievable way. If your application uses encryption as means for protecting sensitive data, verify that the following pieces are in place:</p>
+                <strong>Encryption:</strong> Encryption is a mechanism for protecting sensitive data in a retrievable way. If your application uses encryption as a means for protecting sensitive data, verify that the following pieces are in place:</p>
               <ul>
                 <li>
                   <strong>Encryption Key</strong>: Your application's encryption keys are securely stored inside your application's key store.&amp;nbsp; </li>
@@ -106,7 +106,7 @@
         <li>
           <p>
             <strong>Encrypt the application data</strong>: If your application's communication channels cannot be encrypted, encrypt the application data. Hashing or encryption should be used when protecting the application data. Use hashing if the application data will be used only for comparison purposes. Use encryption if the application data will be retrieved at a later stage.</p>
-          <p>If hashing is used, choose a longer salt, 16 or more bits.&amp;nbsp;In the case&amp;nbsp;that the produced hash is compromised, longer salts make it more difficult for an attacker to gain access to the sensitive data. If your application uses randomly generated salt, make sure that your application encrypts the random salt and stores it into a configuration file. Always use <strong>SecureRandom</strong> and not <strong>Random</strong> to generate the salt. Example of using <strong>SecureRandom</strong> to generate a random salt:</p>
+          <p>If hashing is used, choose a longer salt, 16 or more bits.&amp;nbsp;In the case&amp;nbsp;that the produced hash is compromised, longer salts make it more difficult for an attacker to gain access to the sensitive data. If your application uses randomly generated salt, make sure that your application encrypts the random salt and stores it in a configuration file. Always use <strong>SecureRandom</strong> and not <strong>Random</strong> to generate the salt. Example of using <strong>SecureRandom</strong> to generate a random salt:</p>
           <blockquote>
             <pre>public static byte[] generateSalt() throws NoSuchAlgorithmException<br />{<br />      // Note that salt is declared as private static byte[] and is<br />      // initialized to null.<br />      if (salt == null)<br />      {<br />            SecureRandom srand = SecureRandom.getInstance("SHA1PRNG");<br />                          salt = new byte[4];<br />            srand.nextBytes(salt);<br />      }<br />       return salt;<br />}</pre>
           </blockquote>
@@ -114,7 +114,7 @@
           <blockquote>
             <pre>public String hashCredentials(char[] pass, byte[] salt)<br />      throws GeneralSecurityException, IOException<br />{<br />      MessageDigest md;<br />      byte[] tempPass;<br />      byte[] digest;<br />            md = MessageDigest.getInstance("SHA-512");<br />      //Convert char[] to byte[]<br />      tempPass = new byte[pass.length];<br />      for (int i = 0; i &lt; pass.length; i++)<br />      {<br />            tempPass[i] = (byte)pass[i];<br />      }<br />      md.update(tempPass);<br />      md.update(salt);<br />      digest = md.digest();<br />      md.reset();<br />      //Clean tempPass<br />      for (int i = 0; i &lt; tempPass.length; i++)<br />      {<br />            tempPass[i] = 0;<br />      }<br />       return new String(digest);<br />}</pre>
           </blockquote>
-          <p>Use encryption if the application data will be retrieved at a later stage.<br /><br />Use symmetric encryption if and only if your application is the only entity that will access the encrypted data. Use a key size of 265-bit or higher and AES for symmetric encryption.<br /><br />Use public/private key encryption if the data will be accessed by two or more parties. Use a key size of 2048-bit or higher and RSA for public/private key encryption. Public/private key encryption allows your application to share sensitive data with multiple entities without disclosing its own encryption key.</p>
+          <p>Use encryption if the application data will be retrieved at a later stage.<br /><br />Use symmetric encryption if and only if your application is the only entity that will access the encrypted data. Use a key size of 256-bit or higher and AES for symmetric encryption.<br /><br />Use public/private key encryption if the data will be accessed by two or more parties. Use a key size of 2048-bit or higher and RSA for public/private key encryption. Public/private key encryption allows your application to share sensitive data with multiple entities without disclosing its own encryption key.</p>
           <pre>// Because the following code generates a new encryption key,<br />// make sure to store it into the application's keystore.<br />KeyGenerator kgen = KeyGenerator.getInstance("AES");<br />kgen.init(256);<br />SecretKey skey = kgen.generateKey();<br />// Set up cipherCipher cipher = Cipher.getInstance("AES");<br />cipher.init(Cipher.ENCRYPT_MODE, skey);<br />// Note that sensitiveData is of type byte[] and contains<br />// data that is sensitive in naturebyte[] encrypted = cipher.doFinal(sensitiveData);</pre>
         </li>
       </ul>

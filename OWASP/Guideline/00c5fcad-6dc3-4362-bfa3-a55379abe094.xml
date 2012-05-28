@@ -24,7 +24,7 @@
   <p>This is an important guideline and should be followed all the time.&amp;nbsp;</p>
   <h1>How</h1>
   <p>Restrict the fields that the user can enter and modify and validate all values coming from the client. If you have predefined values in your form fields, users can change them and post them back to receive different results. Permit only known good values wherever possible. For example, if the input field is for a state, only inputs matching a state postal code should be permitted.</p>
-  <p>The <strong>System.Text.RegularExpressions.Regex</strong> class helps validate input parameters. For example, the following code shows how to use this class to validate a name passed through a query string parameter. The same technique can be used to validate other forms of input parameter, for example, from cookies or form fields. For example, to validate a cookie parameter, use <strong>Request.Cookies</strong> instead of <strong>Request.QueryString</strong>.</p>
+  <p>The <strong>System.Text.RegularExpressions.Regex</strong> class helps validate input parameters. For example, the following code shows how to use this class to validate a name passed through a query string parameter. The same technique can be used to validate other forms of input parameters, for example, from cookies or form fields. For example, to validate a cookie parameter, use <strong>Request.Cookies</strong> instead of <strong>Request.QueryString</strong>.</p>
   <div>
     <div>
     </div>

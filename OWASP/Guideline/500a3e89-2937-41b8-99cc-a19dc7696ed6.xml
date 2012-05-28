@@ -28,7 +28,7 @@
   <ol>
     <li>
       <p>
-        <strong>Understand the different types of users</strong>: Enumerate the different types of users needed for the application. Understand how they willl use the application and to which resources they will need access. Create a matrix mapping the actions each role is authorized to perform with the corresponding system components. Use this matrix to identify the different types of users according to the functionality they need. Creating a threat model may be a useful step to ensure that you correctly understand the implications of this matrix.</p>
+        <strong>Understand the different types of users</strong>: Enumerate the different types of users needed for the application. Understand how they willl use the application and to which resources they will need access. Create a spreadsheet mapping the actions each role is authorized to perform with the corresponding system components. Use this spreadsheet to identify the different types of users according to the functionality they need. Creating a threat model may be a useful step to ensure that you correctly understand the implications of this matrix.</p>
     </li>
     <li>
       <p>
@@ -127,7 +127,7 @@
   <p>The following segment illustrates an application's access control policy. Because the application does not enforce role-based security, it has a policy entry for each separate user; therefore managing the users' access rights can be quite difficult when the number of users to the application grows.</p>
   <pre>&lt;authorization&gt;<br />  &lt;allow users="NTDomain\joe, NTDomain\sarah, NTDomain\bill, NTDomain\sue"/&gt;<br />  &lt;deny users="*"/&gt;<br />&lt;/authorization&gt;</pre>
   <h1>Solution Example</h1>
-  <p>The following segment illustrates an application's access control policy. Because the application enforces role-based security, it provides a policy entry for each group of users; therefore increasing the application's users store has no impact on the ability to manage the users' access rights as only the group permissions need to be modified.</p>
+  <p>The following segment illustrates an application's access control policy. Because the application enforces role-based security, it provides a policy entry for each group of users; therefore increasing the application's users has no impact on the ability to manage the users' access rights as only the group permissions need to be modified.</p>
   <pre>&lt;authorization&gt;<br />  &lt;allow roles="NTDomain\Employees"/&gt;<br />  &lt;deny users="*"/&gt;<br />&lt;/authorization&gt;</pre>
   <h1>Additional Resources</h1>
   <ul>

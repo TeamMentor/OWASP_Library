@@ -17,7 +17,7 @@
   </Metadata>
   <Content Sanitized="true" DataType="Html">
     <Data><![CDATA[<h1>What to Check For</h1>
-  <p>Check to ensure that the administrative interfaces are enumerated and secured when securing your network devices.</p>
+  <p>Ensure that the administrative interfaces are enumerated and secured when securing your network devices.</p>
   <h1>How to Check</h1>
   <p>Use Terminal Access Controller Access Control System (TACACS) or Remote Authentication Dial-In User Service (RADIUS) authentication for highly secure environments as a means of limiting administrative access to the network.
 </p>

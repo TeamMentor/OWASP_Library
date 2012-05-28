@@ -47,7 +47,7 @@
     </li>
     <li>
       <p>
-        <strong>Choose a method for generating unique tokens.</strong> There are different ways to generate unique tokens. One approach is to generate random tokens for each request. Another approach is to use <em>javax.faces.ViewState</em>. A third approach is to use an API designed specifically for mitigating CSRF, such as ESAPI. Do not session IDs as anti-CSRF tokens.</p>
+        <strong>Choose a method for generating unique tokens.</strong> There are different ways to generate unique tokens. One approach is to generate random tokens for each request. Another approach is to use <em>javax.faces.ViewState</em>. A third approach is to use an API designed specifically for mitigating CSRF, such as ESAPI. Do not use session IDs as anti-CSRF tokens.</p>
     </li>
     <li>
       <p>

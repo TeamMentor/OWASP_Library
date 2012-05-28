@@ -182,7 +182,7 @@
   </div>
   <blockquote>
     <strong>Note</strong>&amp;nbsp;&amp;nbsp;&amp;nbsp;Role names are not case sensitive. If you attempt to create the same role twice, an exception is thrown.</blockquote>
-  <p>The following code shows how to add uses to roles.</p>
+  <p>The following code shows how to add users to roles.</p>
   <div>
     <pre>// Example 1 - Add one user to one role<br />Roles.AddUserToRole("TestOne", "ExampleRole1");</pre>
     <pre>// Example 2 - Add one user to several roles<br />Roles.AddUserToRoles("TestTwo", <br />&amp;nbsp; new string[] { "ExampleRole1", "ExampleRole2" });</pre>

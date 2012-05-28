@@ -29,7 +29,7 @@
     </li>
     <li>
       <p>
-        <strong>Examine redirects and forwards.</strong> Look for code that handles parameters. Verify that this code does not accept fully qualified URLs as input for calculating destinations of redirects or forwards. If code uses parameters to calculate destinations of redirects or forwards, verify that only short-hand keywords defined by the application are accepted as input to map to valid and authorized destinations.</p>
+        <strong>Examine redirects and forwards.</strong> Look for code that handles parameters. Verify that this code does not accept fully qualified URLs as input for calculating destinations of redirects or forwards. If the code uses parameters to calculate destinations of redirects or forwards, verify that only short-hand keywords defined by the application are accepted as input to map to valid and authorized destinations.</p>
     </li>
   </ol>
   <h1>How to Fix</h1>

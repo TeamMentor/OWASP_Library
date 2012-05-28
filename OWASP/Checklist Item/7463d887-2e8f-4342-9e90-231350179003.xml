@@ -48,7 +48,7 @@
         <li>
           <strong>Access Controls</strong>: Verify that only valid, privileged users can access your application's administrative interface. </li>
         <li>
-          <strong>Connection</strong>: Depending on your application's requirements, it may be necessary to check if your application's administrative interface is utilizing SSL. Ensure your application's proper use of SSL.</li>
+          <strong>Connection</strong>: Depending on your application's requirements, it may be necessary to check if your application's administrative interface is accessed over SSL. Ensure your application's proper use of SSL.</li>
       </ul>
     </li>
   </ol>
@@ -57,20 +57,20 @@
   <ol>
     <li>
       <p>
-        <strong>Only privileged users can administer all accounts. </strong>Design your application such that the administrative module is separate from the main application interface. Since the separation requires using separate authentication mechanisms&amp;nbsp;for the application and administration, there is a reduced risk&amp;nbsp;of escalation-of-privilege attacks. </p>
+        <strong>Only privileged users can administer all accounts. </strong>Design your application such that the administrative module is separate from the main application interface. Since the separation requires using separate authentication mechanisms for the application and its administration, there is a reduced risk&amp;nbsp;of escalation-of-privilege attacks. </p>
     </li>
     <li>
       <p>
         <strong>Users may be allowed to administer their own accounts. </strong>It may be necessary to allow users to administer their own accounts. This involves the ability to change passwords, account details, etc. Such administration can be done through the main application interface. Because the user is modifying sensitive data, extra security precautions must be enforced:</p>
       <ul>
         <li>
-          <strong>Track userID at the server-side</strong>: The user should always be tracked at the server-side. Store the userID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. </li>
+          <b>Session management implemented in server side code</b>: The user should always be tracked at the server-side. Store the userID inside a session. The only data the client needs to know is the session identifier. This reduces the risk of an attacker modifying another user's account information. </li>
         <li>
           <strong>Force re-authentication</strong>: Enforce re-authentication when modifying the user's password. This helps verify that the user is aware of the password change and is not a victim of a session hijacking.</li>
         <li>
-          <strong>Modify accounts in sections</strong>: Do not modify all account information at once. Split the account modification procedure in sections. For example, group the account information into credentials, personal data, contact information and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his/her account. </li>
+          <strong>Modify accounts in sections</strong>: Do not modify all account information at once. For example, group the account information into credentials, personal data, contact information and additional information. Modifying the account information in groups reduces the risk of information leakage when the user is updating his/her account. </li>
         <li>
-          <strong>Use SSL when modifying&amp;nbsp;accounts</strong>: The use of SSL provides encryption when transmitting sensitive data over the network. SSL also certifies the authenticity of the application against the user.</li>
+          <strong>Use SSL when modifying&amp;nbsp;accounts</strong>: If SSL is implemented correctly, it can verify the authenticity of the application. It can also encrypt traffic and hence provide confidentiality.</li>
       </ul>
     </li>
   </ol>]]></Data>

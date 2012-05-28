@@ -40,7 +40,7 @@
     </li>
     <li>
       <p>
-        <strong>Choose an&amp;nbsp;appropriate encryption function. </strong>Choose a strong symmetric encryption algorithm that will not be easy for an attacker to break such as AES.</p>
+        <strong>Choose an&amp;nbsp;appropriate encryption function. </strong>Choose a strong symmetric encryption algorithm that will not be easy for an attacker to break; such as AES.</p>
       <blockquote>
         <pre>byte[] salt = MyApp.generateSalt();<br />String userMail = myapp@example.com;<br />MessageDigest md = MessageDigest.getInstance("SHA-512");<br />md.update(userMail.getBytes("UTF-8"));<br />md.update(salt);<br />byte[] rawKey = md.digest();<br />md.reset();<br />SecretKeySpec skeySpec = new SecretKeySpec(rawKey, "AES");<br />// Set up cipherCipher cipher = Cipher.getInstance("AES");<br />cipher.init(Cipher.ENCRYPT_MODE, skeySpec);<br />// Note that pass is declared as byte[] and contains the user's password<br />byte[] encrypted = cipher.doFinal(pass);</pre>
       </blockquote>

@@ -68,7 +68,7 @@
     <li>
       <p>
         <strong>Set a lockout mechanism. </strong>Establish a mechanism to verify the current period of inactivity and automatically set the disabled bit for inactive accounts. Using the application or database server's scheduler, activate such functionality to run during the hours with least user activity. Keep in mind that inactive accounts should be disabled, but not removed until it is confirmed that they should be completely removed. Create a log entry when an account has been disabled.</p>
-      <p>For example, the following database transaction would lock all user accounts that have been inactive for more than 30 days. Such transaction should be scheduled to run once a day:</p>
+      <p>For example, the following database transaction would lock all user accounts that have been inactive for more than 30 days. Such transactions should be scheduled to run once a day:</p>
       <pre>sql&gt; update users set locked = 1<br />      where (current_date - 30) &gt; last_login_date</pre>
       <p>
         <strong>Note:</strong> The statement above uses Oracle syntax. Please consult your database manual if you use a&amp;nbsp;different database engine.</p>

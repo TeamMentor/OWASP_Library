@@ -58,7 +58,7 @@
   <p>This will change the Xpath statement to look like this:</p>
   <pre>string(//user[username/text()='user1' and password/text()=''        or '1' = '1']/account/text())</pre>
   <p>The password portion of the query will always resolve to true which means that the application will authenticate the attacker as user1 even though no password was provided.</p>
-  <p>A good way to fix this example is to use a parameterized query. The idea here is to create a precompiled query that gets values from parameters instead of dynamically creating an XPath expression by concatination at run time. Let $username and $password be string variables that hold the users input. Then construct a query in the following way:</p>
+  <p>A good way to fix this example is to use a parameterized query. The idea here is to create a precompiled query that gets values from parameters instead of dynamically creating an XPath expression by concatenation at run time. Let $username and $password be string variables that hold the users input. Then construct a query in the following way:</p>
   <pre>"//user[user[username/text()=$username and password/text()=$password]"</pre>
   <p>If you are using .NET see the Additional Resources below for another example of how this works.</p>
   <h1>Additional Resources</h1>

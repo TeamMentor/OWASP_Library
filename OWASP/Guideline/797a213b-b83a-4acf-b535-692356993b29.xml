@@ -19,7 +19,7 @@
     <Data><![CDATA[<h1>What to Do</h1>
   <p>Define&amp;nbsp;the different types of users and create specific roles for them. When authorizing access to a resource, build the security checks on a per-role basis rather than on a per-user basis.</p>
   <h1>Why</h1>
-  <p>Application roles allow multiple users to play the same role and&amp;nbsp;provides a clear way to manage the least privileges necessary for the execution of a given task. It provides a more robust and flexible way of managing the application's users.</p>
+  <p>Application roles allow multiple users to play the same role and&amp;nbsp;provides a clear way to manage the privileges necessary for the execution of a given task. It provides a more robust and flexible way of managing the application's users.</p>
   <h1>When</h1>
   <p>If your application uses access control and authorizes its users to application resources, then define roles and perform role-based security checks.</p>
   <h1>How</h1>
@@ -33,7 +33,7 @@
     </li>
     <li>
       <p>
-        <strong>Establish the roles</strong>: Define in code how each role can access&amp;nbsp;each resources. There are two approaches when enforcing role-based security - programmatic and declarative:</p>
+        <strong>Establish the roles</strong>: Define in code how each role can access each resource. There are two approaches when enforcing role-based security - programmatic and declarative:</p>
       <ul>
         <li>
           <p>

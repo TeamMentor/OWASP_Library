@@ -19,7 +19,7 @@
     <Data><![CDATA[<h1>What to Check For</h1>
   <p>Ensure that all users are assigned to specific roles. Verify that all access controls are performed on a per-role basis rather than a per-user basis.</p>
   <h1>Why</h1>
-  <p>Application roles allow multiple users to play the same role. This mechanism provides an easy and clear way to discover and manage the least privileges necessary for the execution of a given task. It provides a more robust and flexible way of managing the application's users.</p>
+  <p>Application roles allow multiple users to play the same role. This mechanism provides an easy and clear way to discover and manage the minimum privileges necessary for the execution of a given task. It provides a more robust and flexible way of managing the application's users.</p>
   <h1>How to Check</h1>
   <p>Use the following steps to determine if your application uses role-based access controls:</p>
   <ol>
@@ -42,7 +42,7 @@
               <blockquote>
                 <pre>// The variable subject represents the user's identity an all<br />// security tokens that are associated with it<br />PrivilegedExceptionAction action = new AuthException("AccessApp");<br />Subject.doAsPrivileged(subject, action, null);</pre>
               </blockquote>
-              <p>Note that <strong>AuthException</strong> is a custom implementation of the <strong>PrivilegedExceptionAction</strong> interface. See the <a href="/article/35bde9da-b8f2-4f8d-9a3f-48a3ededed4b">Consider Using JAAS for Authorization</a> guideline for more details.</p>
+              <p>Note that <strong>AuthException</strong> is a custom implementation of the <strong>PrivilegedExceptionAction</strong> interface.&amp;nbsp;</p>
             </li>
             <li>
               <p>
@@ -77,7 +77,7 @@
     </li>
     <li>
       <p>
-        <strong>Verify that users are assigned into their appropriate roles. </strong>List all of your application's users. Check if each user is assigned into their appropriate role.</p>
+        <strong>Verify that users are assigned into their appropriate roles. </strong>List all of your application's users. Check if each user is assigned an appropriate role.</p>
     </li>
   </ol>
   <h1>How to Fix</h1>
@@ -91,16 +91,16 @@
     </li>
     <li>
       <p>
-        <strong>Establish the roles</strong>: Define in code how each role can access&amp;nbsp;each resources. There are two approaches when enforcing role-based security - programmatic and declarative:</p>
+        <strong>Establish the roles</strong>: Define in code how each role can access each resource. There are two approaches when enforcing role-based security - programmatic and declarative:</p>
       <ul>
         <li>
           <p>
-            <strong>Programmatically</strong>: The programmatic approach to role-based security is written inside the code and provides additional runtime flexibility.<br /><br />To enforce role-based security, you need to create a security policy for your application. If you implement this&amp;nbsp;approach using&amp;nbsp;Java Authentication and Authorization Service (JAAS) policies, you can execute a more focused set of security checks such as whether a user is allowed to access a particular resource or perform a specific action. When building the policy, create a role with associated permissions&amp;nbsp;for each type of user. For example, certain roles would be permitted to access the local filesystem while others would not.<br /><br />See the <a href="/article/0c6693ed-e3c2-4640-a795-c7c9c2a63cbc">Define a Security Policy</a> guideline for more information.</p>
+            <strong>Programmatically</strong>: The programmatic approach to role-based security is written inside the code and provides additional runtime flexibility.<br /><br />To enforce role-based security, you need to create a security policy for your application. If you implement this&amp;nbsp;approach using&amp;nbsp;Java Authentication and Authorization Service (JAAS) policies, you can execute a more focused set of security checks such as whether a user is allowed to access a particular resource or perform a specific action. When building the policy, create a role with associated permissions&amp;nbsp;for each type of user. For example, certain roles would be permitted to access the local filesystem while others would not.<br /></p>
           <pre>grant Principal application.auth.GroupToken "administrators"<br />{<br />  permission java.security.SecurityPermission "AccessApp";<br />  permission java.io.FilePermission “/tmp/myapp/cache”, “read,write”;<br />};<br />grant Principal application.auth.GroupToken "users"<br />{<br />  permission java.security.SecurityPermission "AccessApp";<br />};</pre>
         </li>
         <li>
           <p>
-            <strong>Declarative</strong>: The declarative approach to role-based security is declared within configuration files. While it doesn’t provide much flexibility in the development phase of the code, it allows easy manageability as the declarations can be modified without a recompile. By using the declarative approach, you can easily manage the security settings for&amp;nbsp;large portions of the applications without a need to change the code.<br /><br />Java applications that use declarative security rely on a deployment descriptor (e.g. web.xml). The deployment descriptor uses the following elements for role-based security:</p>
+            <strong>Declarative</strong>: The declarative approach to role-based security is declared within configuration files. While it doesn’t provide much flexibility in the development phase of the code, it allows easy manageability as the declarations can be modified without a recompile. By using the declarative approach, you can easily manage the security settings for the applications without a need to change the code.<br /><br />Java applications that use declarative security rely on a deployment descriptor (e.g. web.xml). The deployment descriptor uses the following elements for role-based security:</p>
           <ul>
             <li>
               <strong>security-constraint</strong>: Defines the access controls associated with a collection of resources as defined in the <em>web-resource-collection</em> element. </li>

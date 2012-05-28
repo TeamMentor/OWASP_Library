@@ -40,7 +40,7 @@
         <li>
           <strong>Current password:</strong> The user uses their current password to confirm the identity. This technique ensures that the given user is aware of the action to be performed and holds responsibility for executing it. </li>
         <li>
-          <strong>CAPTCHA:</strong> CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses CAPTCHA, ensure that your version of CAPTCHA is up-to-date with its security updates.</li>
+          <strong>CAPTCHA:</strong> CAPTCHA is a mechanism where alpha-numeric codes are embedded into displayed pictures. Forcing the user to confirm the embedded code ensures that the application is interacting with a human. If your application uses a CAPTCHA, ensure that the CAPTCHA generating software you are using is secure.</li>
         <li>
           <strong>2nd Factor:</strong> If your application supports a second factor of authentication such as a token, this could play a role in the re-authentication scheme.</li>
       </ul>
@@ -79,7 +79,7 @@
   <p>The following code allows a user to change their credentials. Unfortunately, the code enters the new credentials into the credentials repository without verifying that it is the actual user changing the credentials.</p>
   <pre>public boolean changePassword(String user, char[] newPass)<br />{<br />       // The application fails to re-authenticate the user<br />       // Verify that new password meets password requirements<br />       // Update the credential store with the new password<br />}</pre>
   <h1>Solution Example</h1>
-  <p>The following code allows a user to change their credentials. Before entering the new credentials into the credentials repository, the code verifies that it is the actual user doing the credentials change.</p>
+  <p>The following code allows a user to change their credentials. Before entering the new credentials into the credentials repository, the code verifies that it is the actual user changing the credentials.</p>
   <pre>public boolean changePassword(String user, char[] oldPass, char[] newPass)<br />{<br />      // The application forces re-authentication<br />      if(!validateUser(user, oldPass))<br />      {<br />            return false;<br />      }<br />      // Verify that new password meets password requirements<br />      // Update the credential store with the new password<br />}</pre>]]></Data>
   </Content>
 </TeamMentor_Article>

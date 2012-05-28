@@ -42,7 +42,7 @@
     </li>
   </ol>
   <h1>How to Fix</h1>
-  <p>Encode untrusted data ensures that it is treated as literal text and not as script.&amp;nbsp; You can use the <strong>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</strong> method to encode untrusted data.&amp;nbsp;&amp;nbsp;If you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <strong>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</strong> to make them safe. </p>
+  <p>Encode untrusted data ensures that it is treated as literal text and not as a script. You can use the <strong>Microsoft.Security.ApplicationAntiXSSLibrary.HtmlEncode</strong> method to encode untrusted data.&amp;nbsp;&amp;nbsp;If you write URLs that might contain unsafe characters because they have been constructed from input data or data from a shared database, use <strong>Microsoft.Security.ApplicationAntiXSSLibrary.UrlEncode</strong> to make them safe. </p>
   <p>
     <strong>Note</strong> &amp;nbsp; &amp;nbsp; Make sure that you encode data at the last possible opportunity before the data is returned to the client.&amp;nbsp; If you encode any earlier than this, you may not know the exact context that the data will be used in, and hence the format you need to encode into.&amp;nbsp; Also, early encoding of some data can result in double encoding problems. </p>
   <hr />

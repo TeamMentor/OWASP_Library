@@ -19,7 +19,7 @@
     <Data><![CDATA[<h1>What to Check For</h1>
   <p>Ensure that access to the credential store is limited to administrators with the correct privileges. </p>
   <h1>Why</h1>
-  <p>Unauthorized access to the credential store can lead to users' credentials being overwritten; therefore, allowing the attacker to gain access to application resources without obtaining valid credentials prior to the attack.</p>
+  <p>Unauthorized access to the credential store can lead to users' credentials being overwritten; therefore, allowing the attacker to gain access to application resources without obtaining valid credentials.</p>
   <h1>How to Check</h1>
   <p>Follow these steps to ensure that the credential store is properly secured: </p>
   <ol>
@@ -37,7 +37,7 @@
       <p>
         <strong>Verify that credentials for accessing the store are secured. </strong>Ensure that your application's access credentials and connection strings are not hard-coded into your application's code base. </p>
       <ul>
-        <li>If your application <strong>uses a database</strong> for its credential repository, ensure that access credentials and connection strings are secured properly. </li>
+        <li>If your application <strong>uses a database</strong> as its credential repository, ensure that access credentials and connection strings are secured properly. </li>
         <li>If your application <strong>does not use a database</strong> for its credential repository, verify that only the appropriate components of your application are able to access the credential store.<br /><br />Example of how <strong>not</strong> to handle access to the credential store: </li>
       </ul>
       <p />

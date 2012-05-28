@@ -34,7 +34,7 @@
     </li>
     <li>
       <p>
-        <strong>Ensure directory browsing is disabled in the default servlet's configuration. </strong>Verify that the default servlet is initialized&amp;nbsp;to disable the directory browsing by setting&amp;nbsp;the parameter <em>listings</em> to <em>false</em>.</p>
+        <strong>Ensure directory browsing is disabled in the default servlet's configuration. </strong>Verify that the default servlet is initialized to disable directory browsing by setting&amp;nbsp;the parameter <em>listings</em> to <em>false</em>.</p>
       <pre>&lt;servlet&gt;<br />      &lt;servlet-name&gt;default_servlet&lt;/servlet-name&gt;<br />      &lt;servlet-class&gt;<br />            org.apache.catalina.servlets.DefaultServlet<br />      &lt;/servlet-class&gt;<br /><strong>      &lt;init-param&gt;<br />            &lt;param-name&gt;listings&lt;/param-name&gt;<br />            &lt;param-value&gt;false&lt;/param-value&gt;<br />      &lt;/init-param&gt;<br /></strong>&lt;/servlet&gt;</pre>
     </li>
     <li>

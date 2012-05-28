@@ -41,10 +41,6 @@
         <li>Next check the individual pages, for instance:<br /><br /><pre>void Page_Init (object sender, EventArgs e) {<br />&amp;nbsp;&amp;nbsp; ViewStateUserKey = Session.SessionID;<br />}</pre></li>
       </ol>
     </li>
-    <li>
-      <p>
-        <strong>Ensure ViewStateUserKey is set properly. </strong>Setting <strong>ViewStateUserKey</strong> to a constant string—the same for all users—is like leaving it blank.&amp;nbsp; It must be set to something that varies for each user—such as user ID or, better yet, session ID.&amp;nbsp; For a number of technical and social reasons, session ID is a much better fit because a session ID is unpredictable, times out, and varies on a per-user basis. </p>
-    </li>
   </ol>
   <h1>How to Fix</h1>
   <p>The&amp;nbsp;following code added to each&amp;nbsp;of your pages will set the key based on SessionID.</p>

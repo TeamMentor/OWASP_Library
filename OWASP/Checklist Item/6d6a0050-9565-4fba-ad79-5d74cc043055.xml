@@ -17,7 +17,7 @@
   </Metadata>
   <Content Sanitized="true" DataType="Html">
     <Data><![CDATA[<h1>What to Check For</h1>
-  <p>Check to ensure that log files are configured with an appropriate size depending on the application security requirement.</p>
+  <p>Ensure that log files are large enough depending on the application security requirement.</p>
   <hr />
   <p>Adapted from Microsoft patterns &amp; practices guidance.</p>]]></Data>
   </Content>

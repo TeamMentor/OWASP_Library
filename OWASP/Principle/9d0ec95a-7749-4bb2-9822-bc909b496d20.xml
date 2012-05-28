@@ -36,7 +36,7 @@
   <p>While useful for applications that are already deployed and when you cannot afford to make significant changes, the "deny" approach is not as robust as the "allow" approach because bad data, such as patterns that can be used to identify common attacks, do not remain constant. Valid data remains constant while the range of bad data may change over time.</p>
   <h3>Sanitize Input</h3>
   <p>Sanitizing is about making potentially malicious data safe. It can be helpful when the range of input that is allowed cannot guarantee that the input is safe. This includes anything from stripping a null from the end of a user-supplied string to escaping out values so they are treated as literals.</p>
-  <p>Another common example of sanitizing input in Web applications is using URL encoding or HTML encoding to wrap data and treat it as literal text rather than executable script. HtmlEncode methods escape out HTML characters, and UrlEncode methods encode a URL so that it is a valid URI request.</p>
+  <p>Another common example of sanitizing input in Web applications is using URL encoding or HTML encoding to wrap data and treat it as literal text rather than an executable script. HtmlEncode methods escape out HTML characters, and UrlEncode methods encode a URL so that it is a valid URI request.</p>
   <h3>In Practice</h3>
   <p>The following are examples applied to common input fields, using the preceding approaches: </p>
   <ul>

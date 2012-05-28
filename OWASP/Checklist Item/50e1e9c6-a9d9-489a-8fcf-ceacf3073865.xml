@@ -20,7 +20,7 @@
   <p>Ensure that SSL is used to protect authentication credentials and authentication cookies passed between browser and server.</p>
   <h1>Why</h1>
   <p>By using SSL, you make it much more difficult for an attacker to monitor the network connection&amp;nbsp;to&amp;nbsp;capture authentication credentials and authentication cookies to gain spoofed access to your application. </p>
-  <p>SSL also can improve user trust in your application as it authenticates the server to the client, thus proving the end point for communications.</p>
+  <p>SSL also can improve user trust in your application as it authenticates the server to the client, thus proving itself to be the end point for communications.</p>
   <h1>How to Check</h1>
   <p>To ensure the forms authentication credentials and the forms authentication cookie is passed from browser to server with SSL, use the following steps:</p>
   <ol>
