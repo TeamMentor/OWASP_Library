@@ -2,7 +2,7 @@
 <guidanceExplorer xmlns="urn:microsoft:guidanceexplorer">
   <library name="4738d445-bc9b-456c-8b35-a35057596c16" caption="OWASP" readProtection="ReadWrite" suscribed="false" webSuscribed="true" url="http://localhost:10001/OnlineStorage.asmx">
     <libraryStructure>
-      <folder caption="OWASP Top 10 -  2010" folderId="30b034e7-f3a2-4a81-acbc-e357129711ff">
+      <folder caption="OWASP Top 10" folderId="30b034e7-f3a2-4a81-acbc-e357129711ff">
         <columns>
           <column source="Type" caption="Type" sort="Ascending" visible="true" width="111" position="1" />
           <column source="Topic" caption="Topic" sort="Ascending" visible="true" width="111" position="2" />
